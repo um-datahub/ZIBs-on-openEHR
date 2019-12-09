@@ -1,0 +1,1229 @@
+archetype (adl_version=1.4; uid=e56f0952-265a-371c-9ba4-8fe8882d5bef)
+	openEHR-EHR-ACTION.medication-vaccination_sl.v1
+specialize
+	openEHR-EHR-ACTION.medication.v1
+
+concept
+	[at0000.1]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			author = <
+				["name"] = <"Biljana Prinčič">
+				["organisation"] = <"Marand, Ljubljana">
+				["email"] = <"biljana.princic@marand.si">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2010-11-09">
+		["name"] = <"Sam Heard">
+		["organisation"] = <"NEHTA">
+		["email"] = <"sam.heard@oceaninformatics.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	other_contributors = <"Ian McNicoll, Ocean Informatics, UK", ...>
+	details = <
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"*This ACTION enables the recording of actions taken with regard to vaccination. This will usually be in response to a medication order but may be administered immediately without an order at times requiring recording of the administration alone (e.g. a vaccination). There is a date time at which this ACTION took place and use of this archetype indicates that some action has actually occurred.">
+			keywords = <"*medication","*prescibe","*dispense","*administration","*cessation">
+			use = <"*To record planning, prescribing, dispensing, administration, cessation, suspension, completion of a medication order.">
+			misuse = <"*Use the INSTRUCTION.medication archetype to record orders.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"This ACTION enables the recording of actions taken with regard to vaccination. This will usually be in response to a medication order but may be administered immediately without an order at times requiring recording of the administration alone (e.g. a vaccination). There is a date time at which this ACTION took place and use of this archetype indicates that some action has actually occurred.">
+			keywords = <"medication","prescibe","dispense","administration","cessation">
+			use = <"To record planning, prescribing, dispensing, administration, cessation, suspension, completion of a medication order.">
+			misuse = <"Use the INSTRUCTION.medication archetype to record orders.">
+		>
+	>
+	other_details = <
+		["references"] = <"NEHTA Therapeutic Good in Use Datagroup http://nehta.gov.au
+openEHR Medication Action archetype http://openehr.org/knowledge
+Originally derived from NEHTA ACTION.medication.v1 archetype http://dcm.nehta.org.au/ckm/#showArchetype_1013.1.876_6">
+		["MD5-CAM-1.0.1"] = <"6675BB73BF8B3CB49FCA92B49A88C626">
+		["build_uid"] = <"5ee8957e-1eae-358d-9e05-6da13ac290fd">
+	>
+
+definition
+	ACTION[at0000.1] matches {    -- Vaccination
+		ism_transition matches {
+			ISM_TRANSITION[at0001] matches {    -- Plan medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0001]    -- Plan medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0013] matches {    -- Suspend medication plan
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::527]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0013]    -- Suspend medication plan
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0012] matches {    -- Cancel medication plan
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0012]    -- Cancel medication plan
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0016] matches {    -- Set medication start date
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::529]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0016]    -- Set medication start date
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0002] matches {    -- Issue prescription for medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::
+							245,
+							524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0002]    -- Issue prescription for medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0003] matches {    -- Dispense medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::
+							245,
+							524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0003]    -- Dispense medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0004] matches {    -- Commence medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0004]    -- Commence medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0005] matches {    -- Review medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0005]    -- Review medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0041] matches {    -- Medication order modified
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0041]    -- Medication order modified
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0006] matches {    -- Administer medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0006]    -- Administer medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0010] matches {    -- Re-issue prescription for medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0010]    -- Re-issue prescription for medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0018] matches {    -- Withhold medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0018]    -- Withhold medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0019] matches {    -- Medication declined
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::245]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0019]    -- Medication declined
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0035] matches {    -- Return medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::
+							245,
+							524]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0035]    -- Return medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0008] matches {    -- Delay medication supply
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::530]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0008]    -- Delay medication supply
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0009] matches {    -- Suspend administration
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::530]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0009]    -- Suspend administration
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0011] matches {    -- Suspend re-issue of prescription
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::530]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0011]    -- Suspend re-issue of prescription
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0015] matches {    -- Cease administration
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::531]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0015]    -- Cease administration
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0014] matches {    -- Reverse prescription for medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::531]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0014]    -- Reverse prescription for medication
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0007] matches {    -- Complete medication
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0007]    -- Complete medication
+						}
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0017] matches {    -- Tree
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0020.1] occurrences matches {0..1} matches {    -- Vaccination
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[ac0.2]
+								}
+							}
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0033] occurrences matches {0..*} matches {    -- Instructions
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0023] occurrences matches {0..*} matches {    -- Ingredients and form
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_ingredients(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					ELEMENT[at0021] occurrences matches {0..*} matches {    -- Reason
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0.67,    -- 100 - Regular (routine) vaccination program
+									at0.68,    -- 101 - Regular ( (routine) vaccination program - pre-school children
+									at0.69,    -- 102 - Regular ( (routine) vaccination program - School children and students
+									at0.70,    -- 103 - Regular ( (routine) vaccination program - exposure exercises
+									at0.71,    -- 104 - Regular ( (routine) vaccination program - occupational exposure
+									at0.72,    -- 200 - Optional vaccination
+									at0.73,    -- 201 - Optional vaccination – passengers
+									at0.74,    -- 202 - Optional vaccination - vaccination remained (self-paying)
+									at0.75,    -- 300 - Epidemiological indication
+									at0.76,    -- 301 - Post-exposure vaccination
+									at0.77,    -- 400 - medical indications
+									at0.78,    -- 401 - Medical indication - circulatory diseases
+									at0.79,    -- 402 - Medical indication - the blood and the immune system
+									at0.80,    -- 403 - Medical indication - malignant neoplasm
+									at0.81,    -- 404 - Medical indication - respiratory diseases
+									at0.82,    -- 405 - Medical indication - Metabolic Diseases
+									at0.83,    -- 406 - Medical indication - diseases of muscles, bones and connective tissue
+									at0.84,    -- 407 - Medical indication - urinary tract
+									at0.85,    -- 408 - Health- indication asplenia
+									at0.86,    -- 409 - Medical indication - after transplantation
+									at0.87,    -- 410 - Medical indication - likvorfistula after head injury
+									at0.88,    -- 411 - Medical indication – “Snaillike” implant
+									at0.89,    -- 500 - Pregnancy
+									at0.90]    -- 900 - Other
+								}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0022] occurrences matches {0..1} matches {    -- Quantity
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_amount\.v1/}
+					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Sequence number
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0027] occurrences matches {0..*} matches {    -- Administration
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.medication_admin(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Brand substituted
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0.92] occurrences matches {0..1} matches {    -- Vaccinated according to the vaccination program
+						value matches {
+							DV_BOOLEAN matches {
+								value matches {true, false; true}
+							}
+						}
+					}
+					ELEMENT[at0.93] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0030] matches {    -- Tree
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- BatchID
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Expiry date
+						value matches {
+							DV_DATE matches {*}
+						}
+					}
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Dispensed to
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Number of times dispensed
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Remaining repeats
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|>=0|}
+							}
+						}
+					}
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Claim category
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.56] occurrences matches {0..1} matches {    -- Duration of temporary suspension
+						value matches {
+							DV_DURATION matches {
+								value matches {PYMWDTH/|>=P0Y|}
+							}
+						}
+					}
+					ELEMENT[at0.61] occurrences matches {0..1} matches {    -- Date of Suspension Authorisation
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0.57] occurrences matches {0..1} matches {    -- Suspension Authorisation
+						value matches {
+							DV_IDENTIFIER matches {
+								issuer matches {/gov.si/}
+								type matches {/VaccineSuspensionAuthorisation/}
+							}
+						}
+					}
+					ELEMENT[at0.60] occurrences matches {0..1} matches {    -- Suspension Type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0.64,    -- Permanent suspension
+									at0.65,    -- Temporary suspension
+									at0.66]    -- Non suspension
+								}
+							}
+						}
+					}
+					CLUSTER[at0.63] occurrences matches {0..*} matches {    -- Target
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0.58] occurrences matches {0..1} matches {    -- Target disease
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[ac0.1]
+										}
+									}
+								}
+							}
+							ELEMENT[at0.62] occurrences matches {0..1} matches {    -- Target disease sequence #
+								value matches {
+									DV_COUNT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"MKB", ...>
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0.56"] = <
+					text = <"Duration of temporary suspension">
+					description = <"The duration of a temporary suspension of vaccination.">
+				>
+				["at0.57"] = <
+					text = <"Suspension Authorisation">
+					description = <"The identifier of the formal authority to suspend this vaccination.">
+				>
+				["at0.58"] = <
+					text = <"Target disease">
+					description = <"The disease against which the vaccine is targeted as an ICD-10 code, or disease for which vaccination is declined.">
+				>
+				["at0.60"] = <
+					text = <"Suspension Type">
+					description = <"The type of suspension.">
+				>
+				["at0.61"] = <
+					text = <"Date of Suspension Authorisation">
+					description = <"Date of the official authorisation to suspend vaccination.">
+				>
+				["at0.62"] = <
+					text = <"Target disease sequence #">
+					description = <"The sequence number of the vaccination against the target disease e.g Diptheria [1].">
+				>
+				["at0.63"] = <
+					text = <"Target">
+					description = <"Details of the target for this vaccination.">
+				>
+				["at0.64"] = <
+					text = <"Permanent suspension">
+					description = <"Permanently suspension.">
+				>
+				["at0.65"] = <
+					text = <"Temporary suspension">
+					description = <"Temporary suspension.">
+				>
+				["at0.66"] = <
+					text = <"Non suspension">
+					description = <"Non suspension.">
+				>
+				["at0.67"] = <
+					text = <"100 - Regular (routine) vaccination program">
+					description = <"Regular (routine) vaccination program.">
+				>
+				["at0.68"] = <
+					text = <"101 - Regular ( (routine) vaccination program - pre-school children">
+					description = <"Regular ( (routine) vaccination program - pre-school children.">
+				>
+				["at0.69"] = <
+					text = <"102 - Regular ( (routine) vaccination program - School children and students">
+					description = <"Regular ( (routine) vaccination program - School children and students.">
+				>
+				["at0.70"] = <
+					text = <"103 - Regular ( (routine) vaccination program - exposure exercises">
+					description = <"Regular ( (routine) vaccination program - exposure exercises.">
+				>
+				["at0.71"] = <
+					text = <"104 - Regular ( (routine) vaccination program - occupational exposure">
+					description = <"Regular ( (routine) vaccination program - occupational exposure.">
+				>
+				["at0.72"] = <
+					text = <"200 - Optional vaccination">
+					description = <"Optional vaccination.">
+				>
+				["at0.73"] = <
+					text = <"201 - Optional vaccination – passengers">
+					description = <"Optional vaccination – passengers.">
+				>
+				["at0.74"] = <
+					text = <"202 - Optional vaccination - vaccination remained (self-paying)">
+					description = <"Optional vaccination - vaccination remained (self-paying).">
+				>
+				["at0.75"] = <
+					text = <"300 - Epidemiological indication">
+					description = <"Epidemiological indication.">
+				>
+				["at0.76"] = <
+					text = <"301 - Post-exposure vaccination">
+					description = <"Post-exposure vaccination.">
+				>
+				["at0.77"] = <
+					text = <"400 - medical indications">
+					description = <"Medical indications.">
+				>
+				["at0.78"] = <
+					text = <"401 - Medical indication - circulatory diseases">
+					description = <"Medical indication - circulatory diseases.">
+				>
+				["at0.79"] = <
+					text = <"402 - Medical indication - the blood and the immune system">
+					description = <"Medical indication - the blood and the immune system.">
+				>
+				["at0.80"] = <
+					text = <"403 - Medical indication - malignant neoplasm">
+					description = <"Medical indication - malignant neoplasm.">
+				>
+				["at0.81"] = <
+					text = <"404 - Medical indication - respiratory diseases">
+					description = <"Medical indication - respiratory diseases.">
+				>
+				["at0.82"] = <
+					text = <"405 - Medical indication - Metabolic Diseases">
+					description = <"Medical indication - Metabolic Diseases.">
+				>
+				["at0.83"] = <
+					text = <"406 - Medical indication - diseases of muscles, bones and connective tissue">
+					description = <"Medical indication - diseases of muscles, bones and connective tissue.">
+				>
+				["at0.84"] = <
+					text = <"407 - Medical indication - urinary tract">
+					description = <"Medical indication - urinary tract.">
+				>
+				["at0.85"] = <
+					text = <"408 - Health- indication asplenia">
+					description = <"Health- indication asplenia.">
+				>
+				["at0.86"] = <
+					text = <"409 - Medical indication - after transplantation">
+					description = <"Medical indication - after transplantation.">
+				>
+				["at0.87"] = <
+					text = <"410 - Medical indication - likvorfistula after head injury">
+					description = <"Medical indication - likvorfistula after head injury.">
+				>
+				["at0.88"] = <
+					text = <"411 - Medical indication – “Snaillike” implant">
+					description = <"Medical indication – “Snaillike” implant.">
+				>
+				["at0.89"] = <
+					text = <"500 - Pregnancy">
+					description = <"Pregnancy.">
+				>
+				["at0.90"] = <
+					text = <"900 - Other">
+					description = <"Other.">
+				>
+				["at0.92"] = <
+					text = <"Vaccinated according to the vaccination program">
+					description = <"If patient has been vaccinated according the vaccionation program of RS?.">
+				>
+				["at0.93"] = <
+					text = <"Comment">
+					description = <"Any comment about vaccination.">
+				>
+				["at0000"] = <
+					text = <"Medication action">
+					description = <"Details of use, administration, dispensing or other care step relating to a medicine, vaccine or other therapeutic good which may arise from an instruction from a clinician.">
+				>
+				["at0000.1"] = <
+					text = <"Vaccination">
+					description = <"Details of use, administration, dispensing or other care step relating to a vaccination.">
+				>
+				["at0001"] = <
+					text = <"Plan medication">
+					description = <"The medication is planned but no execution has taken place.">
+				>
+				["at0002"] = <
+					text = <"Issue prescription for medication">
+					description = <"The instruction has issued as an item on a prescription.">
+				>
+				["at0003"] = <
+					text = <"Dispense medication">
+					description = <"The medication has been dispensed.">
+				>
+				["at0004"] = <
+					text = <"Commence medication">
+					description = <"The medication has been taken by the patient for the first time.">
+				>
+				["at0005"] = <
+					text = <"Review medication">
+					description = <"The medication has been reviewed.">
+				>
+				["at0006"] = <
+					text = <"Administer medication">
+					description = <"A single administration of the medication has taken place.">
+				>
+				["at0007"] = <
+					text = <"Complete medication">
+					description = <"The medication has been completed as instructed.">
+				>
+				["at0008"] = <
+					text = <"Delay medication supply">
+					description = <"The medication has not been dispensed as supply is not yet available.">
+				>
+				["at0009"] = <
+					text = <"Suspend administration">
+					description = <"The administration of the  medication has been suspended.">
+				>
+				["at0010"] = <
+					text = <"Re-issue prescription for medication">
+					description = <"The medication has been re-prescribed for an existing instruction.">
+				>
+				["at0011"] = <
+					text = <"Suspend re-issue of prescription">
+					description = <"Reissuing of this prescription is not available without some intervention.">
+				>
+				["at0012"] = <
+					text = <"Cancel medication plan">
+					description = <"The planned administration has been cancelled prior to any administration.">
+				>
+				["at0013"] = <
+					text = <"Suspend medication plan">
+					description = <"The plan to order medication has been suspended.">
+				>
+				["at0014"] = <
+					text = <"Reverse prescription for medication">
+					description = <"The prescription has been cancelled but administration or dispensing may have occurred.">
+				>
+				["at0015"] = <
+					text = <"Cease administration">
+					description = <"The administration of this medication has been ceased before anticipated completion.">
+				>
+				["at0016"] = <
+					text = <"Set medication start date">
+					description = <"The time to start this medication has been set.">
+				>
+				["at0017"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0018"] = <
+					text = <"Withhold medication">
+					description = <"The administration of a medication has been withheld and not given.">
+				>
+				["at0019"] = <
+					text = <"Medication declined">
+					description = <"An administration of the medication was refused by the subject of care (patient).">
+				>
+				["at0020"] = <
+					text = <"Medicine">
+					description = <"The medicine, vaccine or other therapeutic good which was the focus of the action. This element will normally be coded with a medicines terminology but free text may be required in some cases.">
+				>
+				["at0020.1"] = <
+					text = <"Vaccination">
+					description = <"The medication or other therapeutic good which was the focus of the action. Use CBZ codes or EPSOS vaccination codes as mapping.">
+				>
+				["at0021"] = <
+					text = <"Reason">
+					description = <"The reason(s) the specific action or step was carried out. Note: This is not the reason for the medication instruction, rather the specific reason e.g. for administration or for ceasing the medication.">
+				>
+				["at0022"] = <
+					text = <"Quantity">
+					description = <"The quantity of medicine, vaccine or other therapeutic good.">
+				>
+				["at0023"] = <
+					text = <"Ingredients and form">
+					description = <"Detailed information about the ingredient(s) including form and strength.">
+				>
+				["at0024"] = <
+					text = <"Comment">
+					description = <"A comment on the action taken.">
+				>
+				["at0025"] = <
+					text = <"Sequence number">
+					description = <"The sequence number specific to the action being recorded.">
+				>
+				["at0026"] = <
+					text = <"BatchID">
+					description = <"Assigned by the manufacturer to identify the manufacturing batch of the item.">
+				>
+				["at0027"] = <
+					text = <"Administration">
+					description = <"Details about the administration of the medicine, vaccine or other therapeutic good.">
+				>
+				["at0030"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0031"] = <
+					text = <"Dispensed to">
+					description = <"The name of the person to whom this was dispensed, if not the subject of care.">
+				>
+				["at0032"] = <
+					text = <"Remaining repeats">
+					description = <"The number of times the medicine, vaccine or other therapeutic good may still be dispensed without re-issue of a prescription or order. Note: This is the information required by the subject of care and prescriber.">
+				>
+				["at0033"] = <
+					text = <"Instructions">
+					description = <"Any instructions given to the subject of care or carer at the time of the action.">
+				>
+				["at0035"] = <
+					text = <"Return medication">
+					description = <"A dispensed medication is returned or not collected without use.">
+				>
+				["at0036"] = <
+					text = <"Brand substituted">
+					description = <"A different brand of the same medicine, vaccine or other therapeutic good was substituted for the one nominated in the order.">
+				>
+				["at0037"] = <
+					text = <"Number of times dispensed">
+					description = <"The number of times this order has been dispensed. The sum of this number minus one and the remaining repeats provides the number of repeats on the original order.">
+				>
+				["at0038"] = <
+					text = <"Claim category">
+					description = <"The category of reimbursement or subsidy sought for the item.">
+				>
+				["at0039"] = <
+					text = <"Change dose or timing">
+					description = <"A new instruction with changed dose or timing has been created that replaces this one.">
+				>
+				["at0040"] = <
+					text = <"Expiry date">
+					description = <"The expiry date of the medicine administered as documented by the manufacturer.">
+				>
+				["at0041"] = <
+					text = <"Medication order modified">
+					description = <"The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules.">
+				>
+			>
+		>
+		["sl"] = <
+			items = <
+				["at0.56"] = <
+					text = <"Trajanje opustitve cepljenja">
+					description = <"Trajanje opustitve cepljenja">
+				>
+				["at0.57"] = <
+					text = <"Številka odločbe o opustitvi cepljenja">
+					description = <"Številka odločbe o opustitvi cepljenja, ki jo izda primerna ustanova">
+				>
+				["at0.58"] = <
+					text = <"Cepljenje za bolezen">
+					description = <"Bolezen za katero je opuščeno cepljenje">
+				>
+				["at0.60"] = <
+					text = <"Tip opustitve cepljenja">
+					description = <"Tip opustitve cepljenja">
+				>
+				["at0.61"] = <
+					text = <"Datum odločbe o opustitvi cepljenja">
+					description = <"Datum odločbe o opustitvi cepljenja">
+				>
+				["at0.62"] = <
+					text = <"*Target disease sequence #(en)">
+					description = <"*The sequence number of the vaccination against the target disease e.g Diptheria [1].(en)">
+				>
+				["at0.63"] = <
+					text = <"Podatki o cepljenju za bolezen">
+					description = <"Podatki o cepljenju za bolezen">
+				>
+				["at0.64"] = <
+					text = <"*Permanent suspension(en)">
+					description = <"*Permanently suspension.(en)">
+				>
+				["at0.65"] = <
+					text = <"*Temporary suspension(en)">
+					description = <"*Temporary suspension.(en)">
+				>
+				["at0.66"] = <
+					text = <"*Non suspension(en)">
+					description = <"*Non suspension.(en)">
+				>
+				["at0.67"] = <
+					text = <"100 - Redni (rutinski) program cepljenja">
+					description = <"100 - Redni (rutinski) program cepljenja ">
+				>
+				["at0.68"] = <
+					text = <"101 - Redni (rutinski) program cepljenja – predšolski otroci">
+					description = <"101 - Redni (rutinski) program cepljenja – predšolski otroci ">
+				>
+				["at0.69"] = <
+					text = <"102 - Redni (rutinski) program cepljenja – šolski otroci in dijaki">
+					description = <"102 - Redni (rutinski) program cepljenja – šolski otroci in dijaki ">
+				>
+				["at0.70"] = <
+					text = <"103 - Redni (rutinski) program cepljenja – izpostavljenost pri vajah">
+					description = <"103 - Redni (rutinski) program cepljenja – izpostavljenost pri vajah ">
+				>
+				["at0.71"] = <
+					text = <"*104 - Regular ( (routine) vaccination program - occupational exposure(en)">
+					description = <"*Regular ( (routine) vaccination program - occupational exposure.(en)">
+				>
+				["at0.72"] = <
+					text = <"*200 - Optional vaccination(en)">
+					description = <"*Optional vaccination.(en)">
+				>
+				["at0.73"] = <
+					text = <"*201 - Optional vaccination – passengers(en)">
+					description = <"*Optional vaccination – passengers.(en)">
+				>
+				["at0.74"] = <
+					text = <"*202 - Optional vaccination - vaccination remained (self-paying)(en)">
+					description = <"*Optional vaccination - vaccination remained (self-paying).(en)">
+				>
+				["at0.75"] = <
+					text = <"*300 - Epidemiological indication(en)">
+					description = <"*Epidemiological indication.(en)">
+				>
+				["at0.76"] = <
+					text = <"*301 - Post-exposure vaccination(en)">
+					description = <"*Post-exposure vaccination.(en)">
+				>
+				["at0.77"] = <
+					text = <"*400 - medical indications(en)">
+					description = <"*Medical indications.(en)">
+				>
+				["at0.78"] = <
+					text = <"*401 - Medical indication - circulatory diseases(en)">
+					description = <"*Medical indication - circulatory diseases.(en)">
+				>
+				["at0.79"] = <
+					text = <"*402 - Medical indication - the blood and the immune system(en)">
+					description = <"*Medical indication - the blood and the immune system.(en)">
+				>
+				["at0.80"] = <
+					text = <"*403 - Medical indication - malignant neoplasm(en)">
+					description = <"*Medical indication - malignant neoplasm.(en)">
+				>
+				["at0.81"] = <
+					text = <"*404 - Medical indication - respiratory diseases(en)">
+					description = <"*Medical indication - respiratory diseases.(en)">
+				>
+				["at0.82"] = <
+					text = <"*405 - Medical indication - Metabolic Diseases(en)">
+					description = <"*Medical indication - Metabolic Diseases.(en)">
+				>
+				["at0.83"] = <
+					text = <"*406 - Medical indication - diseases of muscles, bones and connective tissue(en)">
+					description = <"*Medical indication - diseases of muscles, bones and connective tissue.(en)">
+				>
+				["at0.84"] = <
+					text = <"*407 - Medical indication - urinary tract(en)">
+					description = <"*Medical indication - urinary tract.(en)">
+				>
+				["at0.85"] = <
+					text = <"*408 - Health- indication asplenia(en)">
+					description = <"*Health- indication asplenia.(en)">
+				>
+				["at0.86"] = <
+					text = <"*409 - Medical indication - after transplantation(en)">
+					description = <"*Medical indication - after transplantation.(en)">
+				>
+				["at0.87"] = <
+					text = <"*410 - Medical indication - likvorfistula after head injury(en)">
+					description = <"*Medical indication - likvorfistula after head injury.(en)">
+				>
+				["at0.88"] = <
+					text = <"*411 - Medical indication – “Snaillike” implant(en)">
+					description = <"*Medical indication – “Snaillike” implant.(en)">
+				>
+				["at0.89"] = <
+					text = <"*500 - Pregnancy(en)">
+					description = <"*Pregnancy.(en)">
+				>
+				["at0.90"] = <
+					text = <"*900 - Other(en)">
+					description = <"*Other.(en)">
+				>
+				["at0.92"] = <
+					text = <"Cepljen po programu">
+					description = <"Ali je pacient cepljen po programu?">
+				>
+				["at0.93"] = <
+					text = <"Opombe">
+					description = <"Opombe">
+				>
+				["at0000"] = <
+					text = <"*Medication action(en)">
+					description = <"*Details of use, administration, dispensing or other care step relating to a medicine, vaccine or other therapeutic good which may arise from an instruction from a clinician.(en)">
+				>
+				["at0000.1"] = <
+					text = <"Cepljenje">
+					description = <"Podatki o cepljenju">
+				>
+				["at0001"] = <
+					text = <"*Plan medication(en)">
+					description = <"*The medication is planned but no execution has taken place.(en)">
+				>
+				["at0002"] = <
+					text = <"*Issue prescription for medication(en)">
+					description = <"*The instruction has issued as an item on a prescription.(en)">
+				>
+				["at0003"] = <
+					text = <"*Dispense medication(en)">
+					description = <"*The medication has been dispensed.(en)">
+				>
+				["at0004"] = <
+					text = <"*Commence medication(en)">
+					description = <"*The medication has been taken by the patient for the first time.(en)">
+				>
+				["at0005"] = <
+					text = <"*Review medication(en)">
+					description = <"*The medication has been reviewed.(en)">
+				>
+				["at0006"] = <
+					text = <"*Administer medication(en)">
+					description = <"*A single administration of the medication has taken place.(en)">
+				>
+				["at0007"] = <
+					text = <"*Complete medication(en)">
+					description = <"*The medication has been completed as instructed.(en)">
+				>
+				["at0008"] = <
+					text = <"*Delay medication supply(en)">
+					description = <"*The medication has not been dispensed as supply is not yet available.(en)">
+				>
+				["at0009"] = <
+					text = <"*Suspend administration(en)">
+					description = <"*The administration of the  medication has been suspended.(en)">
+				>
+				["at0010"] = <
+					text = <"*Re-issue prescription for medication(en)">
+					description = <"*The medication has been re-prescribed for an existing instruction.(en)">
+				>
+				["at0011"] = <
+					text = <"*Suspend re-issue of prescription(en)">
+					description = <"*Reissuing of this prescription is not available without some intervention.(en)">
+				>
+				["at0012"] = <
+					text = <"*Cancel medication plan(en)">
+					description = <"*The planned administration has been cancelled prior to any administration.(en)">
+				>
+				["at0013"] = <
+					text = <"*Suspend medication plan(en)">
+					description = <"*The plan to order medication has been suspended.(en)">
+				>
+				["at0014"] = <
+					text = <"*Reverse prescription for medication(en)">
+					description = <"*The prescription has been cancelled but administration or dispensing may have occurred.(en)">
+				>
+				["at0015"] = <
+					text = <"*Cease administration(en)">
+					description = <"*The administration of this medication has been ceased before anticipated completion.(en)">
+				>
+				["at0016"] = <
+					text = <"*Set medication start date(en)">
+					description = <"*The time to start this medication has been set.(en)">
+				>
+				["at0017"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0018"] = <
+					text = <"Zadržano zdravilo">
+					description = <"Zdravilo, ki je bilo zadržano in ni bilo dano pacientu">
+				>
+				["at0019"] = <
+					text = <"Zavrnjeno zdravilo">
+					description = <"Zdravilo, ki ni bilo dano pacientu zato, ker ga je pacient zavrnil">
+				>
+				["at0020"] = <
+					text = <"Zdravilo">
+					description = <"Naročeno zdravilo">
+				>
+				["at0020.1"] = <
+					text = <"Cepivo">
+					description = <"Cepivo na katerega se nanaša izvedba akcije">
+				>
+				["at0021"] = <
+					text = <"Razlog za cepljenje">
+					description = <"Razlog cepljenja z dolečnim cepivom">
+				>
+				["at0022"] = <
+					text = <"Količina">
+					description = <"Količina ">
+				>
+				["at0023"] = <
+					text = <"Sestavine cepiva">
+					description = <"Informacije o sestavinah cepiva">
+				>
+				["at0024"] = <
+					text = <"Komentar o cepljenju">
+					description = <"Komentar o izvedbi cepljenja">
+				>
+				["at0025"] = <
+					text = <"Zaporedna številka cepljenja">
+					description = <"Zaporedna številka cepljenja">
+				>
+				["at0026"] = <
+					text = <"Serijska številka cepiva">
+					description = <"Serijska številka cepiva">
+				>
+				["at0027"] = <
+					text = <"Administracija">
+					description = <"Podatki o administraciji zdravila">
+				>
+				["at0030"] = <
+					text = <"Tree(en)">
+					description = <"@ internal @">
+				>
+				["at0031"] = <
+					text = <"Prevzemnik zdravila">
+					description = <"Ime osebe, komu je zdravilo razdeljeno">
+					comment = <"*? should use a generic participation.(en)">
+				>
+				["at0032"] = <
+					text = <"Preostalo število izdaj zdravila">
+					description = <"Število ponovnih izdaj zdravila za katere ni potrebno imeti dodatnega naročila. Te informacije lahko zahteva pacient ali predpisovalec zdravila.">
+				>
+				["at0033"] = <
+					text = <"Navodila za pacienta">
+					description = <"Kakršnakoli navodila za pacienta">
+				>
+				["at0035"] = <
+					text = <"Vrnjeno">
+					description = <"Povrnjeno izdano zdravilo, ki ni bilo uporabljeno">
+				>
+				["at0036"] = <
+					text = <"Nadomestno zdravilo">
+					description = <"Druga znamka zdravila z enakim učinkom">
+				>
+				["at0037"] = <
+					text = <"Število izdaj zdravila">
+					description = <"Število izdaj zdravila. Vsota tega števila in števila ponovitev izdaj predstavlja izdano količino originalnega naročila.">
+				>
+				["at0038"] = <
+					text = <"Kategorija zahtevka">
+					description = <"Zahtevek za povračilo ali podporo">
+				>
+				["at0039"] = <
+					text = <"*Change dose or timing(en)">
+					description = <"*A new instruction with changed dose or timing has been created that replaces this one.(en)">
+				>
+				["at0040"] = <
+					text = <"*Expiry date(en)">
+					description = <"*The expiry date of the medicine administered as documented by the manufacturer.(en)">
+				>
+				["at0041"] = <
+					text = <"*Medication order modified(en)">
+					description = <"*The medication order has been changed in a manner which does not require a new instruction/order to be issued, according to local clinical rules.(en)">
+				>
+			>
+		>
+	>
+	constraint_definitions = <
+		["en"] = <
+			items = <
+				["ac0.1"] = <
+					text = <"any_immunisable_disease">
+					description = <"Any disease for which a vaccine exists.">
+				>
+				["ac0.2"] = <
+					text = <"Any CBZ2  or epSOS immunisation term">
+					description = <"Any valid CBZ2 or epSOS vaccination term.">
+				>
+			>
+		>
+		["sl"] = <
+			items = <
+				["ac0.1"] = <
+					text = <"*any_immunisable_disease (en)">
+					description = <"*Any disease for which a vaccine exists.(en)">
+				>
+				["ac0.2"] = <
+					text = <"*Any CBZ2  or epSOS immunisation term(en)">
+					description = <"*Any valid CBZ2 or epSOS vaccination term.(en)">
+				>
+			>
+		>
+	>
+	constraint_binding = <
+		["MKB"] = <
+			items = <
+				["ac0.1"] = <terminology:MKB/10?subset=bolezni>
+			>
+		>
+	>
