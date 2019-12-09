@@ -1,0 +1,68 @@
+archetype (adl_version=1.4; uid=f2555dce-ca88-3859-b722-f764a695c41b)
+	openEHR-EHR-SECTION.adhoc.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			author = <
+				["name"] = <"Art Latyp Латыпов Артур Шамилевич">
+				["organisation"] = <"RusBITech РусБИТех, Москва">
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2010-07-03">
+		["name"] = <"Dr Ian McNicoll">
+		["organisation"] = <"Ocean Informatics, United Kingdom">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+	>
+	lifecycle_state = <"AuthorDraft">
+	details = <
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Базовый заголовок раздела, должен быть переименован в локальном шаблоне ">
+			keywords = <"раздел","шаблон","заготовка","название","образец">
+			copyright = <"© openEHR Foundation">
+			use = <"используется для создания и именования разделов в локальных шаблонах">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"A generic section header which is normally renamed locally at template level.">
+			copyright = <"© openEHR Foundation">
+			use = <"To construct and name a section within a local template.">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"6FD3128A583EB7081153D0265245E1FA">
+		["build_uid"] = <"c4bdab96-cb57-369f-ac17-3822f4549586">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Adhoc heading
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Adhoc heading">
+					description = <"A generic section header.">
+				>
+			>
+		>
+		["ru"] = <
+			items = <
+				["at0000"] = <
+					text = <"заготовка заголовка">
+					description = <"Образец заголовка раздела">
+				>
+			>
+		>
+	>
