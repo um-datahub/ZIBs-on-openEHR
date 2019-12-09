@@ -1,0 +1,1202 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>e593577b-2d6f-4dc0-bb23-23e9ee02ccc7</id>
+  <name>Slovenian National Patient Summary</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction.v1]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Allergy &amp; Intolerance Concern Entry</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.19376.1.5.3.1.4.5.3</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction.v1]/data[at0001]/items[at0009]/items[at0011]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R5.1 Allergy Display Name</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root=‘2.16.840.1.113883.10.20.1.27’]/entryRelationship[@typeCode=’SUBJ’]/observation[templateId/@root=’1.3.6.1.4.1.19376.1.5.3.1.4.6’]/entryRelationship[@typeCode=’MFST’]/observation[templateId/@root=’2.16.840.1.113883.10.20.1.54’]/value/@displayName</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path Notes</key>
+        <value>See Guidance</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction.v1]/data[at0001]/items[at0009]/items[at0016]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R5.2 Allergy id code</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root=‘2.16.840.1.113883.10.20.1.27’]/entryRelationship[@typeCode=’SUBJ’]/observation[templateId/@root=’1.3.6.1.4.1.19376.1.5.3.1.4.6’]/code/@code</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction.v1]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R5.4 Allergy Agent Description</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root=‘2.16.840.1.113883.10.20.1.27’]/entryRelationship[@typeCode=’SUBJ’]/observation[templateId/@root=’1.3.6.1.4.1.19376.1.5.3.1.4.6’]/participant[@typeCode=’CSM’]/participantRole[@classCode=’MANU’]/playingEntity[@classCode=’MMAT]/code/@displayName</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path CodedText </key>
+        <value>entry/act[templateId/@root=‘2.16.840.1.113883.10.20.1.27’]/entryRelationship[@typeCode=’SUBJ’]/observation[templateId/@root=’1.3.6.1.4.1.19376.1.5.3.1.4.6’]/participant[@typeCode=’CSM’]/participantRole[@classCode=’MANU’]/playingEntity[@classCode=’MMAT]/code/@code</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path Notes</key>
+        <value>If the allergenic agent is a medicament:WHO ATC 2.16.840.1.113883.6.73; If not:epSOSAllergenNoDrugs 2.16.840.1.113883.6.96 </value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.adverse_reaction.v1]/data[at0001]/items[at0009]/items[at0027]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R5.3 Allergy Onset DAte</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root='2.16.840.1.113883.10.20.1.27’]/entryRelationship[@typeCode=’SUBJ’]/observation[templateId/@root=’1.3.6.1.4.1.19376.1.5.3.1.4.6’]/effectiveTime/low/@value</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Implementation Document</key>
+        <value>epSOS Patient Summary</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Summary Section</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.2.3</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path Notes</key>
+        <value>Map Narrative block to openEHR /feeder_audit/original_content</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Problem Concern Entry</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.19376.1.5.3.1.4.5.2</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template XML Skeleton</key>
+        <value>&lt;!-- Parent Concern Template --&gt;
+&lt;act classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.27" /&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" /&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" /&gt;
+  &lt;id root=" " extension=" " /&gt;
+  &lt;code nullFlavor="NA" /&gt;
+  &lt;statusCode code="active|suspended|aborted|completed" /&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value=" " /&gt;
+    &lt;high value=" " /&gt;
+  &lt;/effectiveTime&gt;
+  &lt;!-- 1..* entry relationships identifying problems of concern --&gt;
+  &lt;observation classCode='OBS' moodCode='EVN' negationInd=' false|true '&gt;
+		&lt;templateId root='2.16.840.1.113883.10.20.1.28'/&gt;
+		&lt;templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5'/&gt;
+		&lt;id root=' ' extension=' '/&gt;
+		&lt;code code=' ' displayName=' ' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/&gt;
+		&lt;text&gt;&lt;reference value=' '/&gt;&lt;/text&gt;
+		&lt;statusCode code='completed'/&gt;
+		&lt;effectiveTime&gt;&lt;low value=' '/&gt;&lt;high value=' '/&gt;&lt;/effectiveTime&gt;
+		&lt;value xsi:type='CD' code=' ' codeSystem=' ' displayName=' ' codeSystemName=' '&gt;
+			&lt;originalText&gt;&lt;reference value=' '/&gt;&lt;/originalText&gt;
+		&lt;/value&gt;
+		&lt;!-- zero or one 
+				&lt;entryRelationship typeCode='REFR' inversionInd='false'&gt; 
+				elements identifying the health status of concern --&gt;
+		&lt;!-- zero or one &lt;entryRelationship typeCode='REFR' inversionInd='false'&gt; elements
+				containing clinical status --&gt;
+		&lt;!-- zero to many &lt;entryRelationship typeCode='REFR' inversionInd='true'&gt; elements
+				containing comments --&gt;
+		&lt;/observation&gt;
+&lt;/act&gt;</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R7.1 Problem Description</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Value Valueset</key>
+        <value>epSOSCodeProb, OID 1.3.6.1.4.1.12559.11.10.1.3.1.42.23</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root=‘1.3.6.1.4.1.19376.1.5.3.1.4.5.2’]/entryRelationship[@type='SUBJ']/observation[templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.5']/value/@code</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template XML Skeleton</key>
+        <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+          <templateId root="2.16.840.1.113883.10.20.1.11" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" />
+          <id root="1331536070" />
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list" />
+          <title />
+          <text />
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" />
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" />
+              <id root="1481978871" />
+              <code nullFlavor="NA" />
+              <text />
+              <effectiveTime>
+                <low value="2011" />
+                <high value="2011" />
+              </effectiveTime>
+              <entryRelationship>
+                <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" />
+                  <id root="951689556" />
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" />
+                  <text />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="2011" />
+                    <high value="2011" />
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.55" />
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.1" />
+                      <id root="321484537" />
+                      <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation" />
+                      <text />
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low value="2011" />
+                        <high value="2011" />
+                      </effectiveTime>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation />
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation />
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act />
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0003]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R7.3 Problem Onset Time</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root=‘1.3.6.1.4.1.19376.1.5.3.1.4.5.2’]/effectiveTime/low</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0030]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R7.4 Problem End Date</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>Template Node Path	entry/act[templateId/@root=‘1.3.6.1.4.1.19376.1.5.3.1.4.5.2’]/effectiveTime/high</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Problem Concern Entry</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.19376.1.5.3.1.4.5.2</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0005]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Value Valueset</key>
+        <value>epSOSSeverity::1.3.6.1.4.1.12559.11.10.1.3.1.42.13</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Severity Entry</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.19376.1.5.3.1.4.1</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>Severity</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/data[at0001]/items[at0009]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Comment Entry</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.19376.1.5.3.1.4.2</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>/text</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template XML Skeleton</key>
+        <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.1.40" />
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2" />
+          <id root="1293955457" />
+          <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment" />
+          <!-- Refeence to Narrative text -->
+          <text />
+          <statusCode code="completed" />
+          <effectiveTime>
+            <low value="2011" />
+            <high value="2011" />
+          </effectiveTime>
+        </act>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-EVALUATION.problem_diagnosis.v1]/protocol[at0032]/items[at0046][openEHR-EHR-CLUSTER.problem_status.v1]/items[at0043]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R 7.5 Resolution Circumstances</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/act[templateId/@root=‘1.3.6.1.4.1.19376.1.5.3.1.4.5.2’]/entryRelationship[@type='REFR']/observation[templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.1.2']/value/@code</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Value Valueset</key>
+        <value>2.16.840.1.113883.6.96::epSOSResolutionOutcome</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Vital Signs Organizer</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.19376.1.5.3.1.4.13.1</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template XML Skeleton</key>
+        <value>&lt;organizer classCode='CLUSTER' moodCode='EVN'&gt;
+	&lt;templateId root='2.16.840.1.113883.10.20.1.32'/&gt;
+	&lt;templateId root='2.16.840.1.113883.10.20.1.35'/&gt;
+	&lt;templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13.1'/&gt;
+	&lt;id root='' extension=''/&gt;
+	&lt;code code='46680005' displayName='Vital signs'
+	codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/&gt;
+	&lt;statusCode code='completed'/&gt;
+	&lt;effectiveTime value=''/&gt;
+	&lt;!-- one or more vital signs observations --&gt;
+	&lt;component typeCode='COMP'&gt;
+		&lt;observation classCode='OBS' moodCode='EVN'&gt;
+			&lt;templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/&gt;
+			&lt;templateId root='2.16.840.1.113883.10.20.1.31'/&gt;
+			&lt;templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13.2'/&gt;
+			&lt;id root=' ' extension=' '/&gt;
+			&lt;code code='8480-6' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/&gt;
+			&lt;text&gt;&lt;reference value='#xxx'/&gt;&lt;/text&gt;
+			&lt;statusCode code='completed'/&gt;
+			&lt;effectiveTime value=' '/&gt;
+			&lt;repeatNumber value=' '/&gt;
+			&lt;value xsi:type='PQ' value=' ' unit='mm[Hg]'/&gt;
+		&lt;/observation&gt;
+		&lt;observation classCode='OBS' moodCode='EVN'&gt;
+			&lt;templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/&gt;
+			&lt;templateId root='2.16.840.1.113883.10.20.1.31'/&gt;
+			&lt;templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13.2'/&gt;
+			&lt;id root=' ' extension=' '/&gt;
+			&lt;code code='8462-4' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/&gt;
+			&lt;text&gt;&lt;reference value='#xxx'/&gt;&lt;/text&gt;
+			&lt;statusCode code='completed'/&gt;
+			&lt;effectiveTime value=' '/&gt;
+			&lt;repeatNumber value=' '/&gt;
+			&lt;value xsi:type='PQ' value=' ' unit='mm[Hg]'/&gt;
+		&lt;/observation&gt;
+	&lt;/component&gt;
+&lt;/organizer&gt;</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name Valueset</key>
+        <value>SNOMEDCT::46680005::Vital signs</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]/data[at0001]/origin">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R17.2 Date</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/organizer[templateId/@root= '1.3.6.1.4.1.19376.1.5.3.1.4.13.1']/effectiveTime</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]/data[at0001]/events[at0006]/time">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R17.2 Date</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/organizer[templateId/@root= '1.3.6.1.4.1.19376.1.5.3.1.4.13.1']/effectiveTime</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Value Valueset</key>
+        <value>Both the origin and event/time attributes must be populated.</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]/data[at0001]/events[at0006]/data[at0003]/items[at0004]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>Systolic</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/organizer[templateId/@root= '1.3.6.1.4.1.19376.1.5.3.1.4.13.1']/component/observation[templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.2'][code/@code='8480-6']/value</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Value Valueset</key>
+        <value>epSOSBloodPressure::2.16.840.1.113883.6.1</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name Valueset</key>
+        <value>LOINC::8480-6::INTRAVASCULAR SYSTOLIC</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]/data[at0001]/events[at0006]/data[at0003]/items[at0005]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>Diastolic</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/organizer[templateId/@root= '1.3.6.1.4.1.19376.1.5.3.1.4.13.1']/component/observation[templateId/@root='1.3.6.1.4.1.19376.1.5.3.1.4.13.2'][code/@code='8462-4']/value</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name Valueset</key>
+        <value>LOINC::8462-4::INTRAVASCULAR DIASTOLIC</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Value Valueset</key>
+        <value>epSOSBloodPressure::2.16.840.1.113883.6.1</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0003]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/consumable/manufacturedProduct/manufacturedMaterial/name</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>Medication Item</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0004][openEHR-EHR-CLUSTER.medication_ingredients.v1]/items[at0030][openEHR-EHR-CLUSTER.medication_amount.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>Medication Summary Strength</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0004][openEHR-EHR-CLUSTER.medication_ingredients.v1]/items[at0010]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R19.8 Medication Summary Pharmaceutical Dose Form</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/consumable/manufacturedProduct/manufacturedMaterial/formCode</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0006][openEHR-EHR-CLUSTER.medication_amount.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R19.4 Medication Summary Number of units per intake</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/doseQuantity/low@value;entry/substanceAdministration[templateId/[root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/doseQuantity/low@value</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0010]/items[at0013]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root='1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/effectiveTime[1][@xsi:type='IVL_TS']/high</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0010]/items[at0012]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>Medication Summary Date of Onset of Treatment</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root='1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/effectiveTime[1][@xsi:type='IVL_TS']/low</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0010]/items[at0014]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/@root='1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/effectiveTime[1][@xsi:type='IVL_TS']/low/@value;entry/substanceAdministration[templateId/@root='1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/effectiveTime[1][@xsi:type='IVL_TS']/high/@value </value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0004][openEHR-EHR-CLUSTER.medication_ingredients.v1]/items[at0001]/items[at0002]">
+    <items>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R19.2 Medication Summary Active ingredient description / code</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/consumable/medication/admninisterableMedicine/ingredient/[@classCode='ACTI']/ingredient</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path CodedText </key>
+        <value>entry/substanceAdministration[templateId/[@root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/consumable/medication/admninisterableMedicine/ingredient/[@classCode='ACTI']/ingredient@code</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0004][openEHR-EHR-CLUSTER.medication_ingredients.v1]/items[at0001]/items[at0033][openEHR-EHR-CLUSTER.medication_amount.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R19.3 Medication Summary Strength</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/consumable/manufacturedProduct/manufacturedMaterial/ingredient/[@classCode='ACTI']/quantity</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0010]/items[at0037][openEHR-EHR-CLUSTER.timing.v1]/items[at0022]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name</key>
+        <value>Medication Item Entry Content Module</value>
+      </item>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Name</key>
+        <value>R19.5 Frequency of intake</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root= '1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/effectiveTime[2]</value>
+      </item>
+    </items>
+  </annotations>
+  <annotations path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-INSTRUCTION.medication_order.v1]/activities[at0001]/description[at0002]/items[at0043][openEHR-EHR-CLUSTER.medication_admin.v1]/items[at0001]">
+    <items>
+      <item>
+        <key>CDA Mappings.CDA Template Name OID</key>
+        <value>1.3.6.1.4.1.12559.11.10.1.3.1.3.4</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path</key>
+        <value>entry/substanceAdministration[templateId/[@root='1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/routeCode/displayName</value>
+      </item>
+      <item>
+        <key>CDA Mappings.Template Node Path CodedText </key>
+        <value>entry/substanceAdministration[templateId/[@root='1.3.6.1.4.1.12559.11.10.1.3.1.3.4']/routeCode/code</value>
+      </item>
+    </items>
+  </annotations>
+  <definition xsi:type="COMPOSITION" archetype_id="openEHR-EHR-COMPOSITION.report.v1" concept_name="Report" name="PPoP National Patient Summary">
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="1. Allergies and Other Adverse Reactions Section ">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.adverse_reaction.v1" concept_name="Adverse Reaction" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" name="1.8/9 Allergen">
+          <constraint xsi:type="textConstraint">
+            <termQueryId terminologyLang="en-GB" queryName="WHO::ATC ; epSOS::epSOSAllergenNoDrugs ()" />
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0050]" name="1.1/2 Allergen Category">
+          <constraint xsi:type="textConstraint">
+            <includedValues>1: Drug</includedValues>
+            <includedValues>2: Foodstuff</includedValues>
+            <includedValues>9: Other</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0004]" max="0" />
+        <Rule path="/data[at0001]/items[at0051]" name="1.5 Severity of hypersensitivity">
+          <constraint xsi:type="textConstraint">
+            <includedValues>SNOMED-CT::442452003::Life-threatening</includedValues>
+            <includedValues>SNOMED-CT::349915008::severe</includedValues>
+            <includedValues>SNOMED-CT::24484000::heavy</includedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0049]" max="0" />
+        <Rule path="/data[at0001]/items[at0006]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]" max="1" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0010]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0011]" max="1" min="1" name="1.3/4 Clinical manifestation">
+          <constraint xsi:type="textConstraint">
+            <termQueryId terminologyID="epSOS" terminologyLang="en-GB" queryName="ReactionAllergy" />
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0009]/items[at0016]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0021]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0012]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0027]" name="1.6 Date of occurence" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0028]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0018]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0020]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0025]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0040]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0031]" max="0" />
+        <Rule path="/data[at0001]/items[at0009]/items[at0032]" max="0" />
+        <Rule path="/protocol[at0042]" hide_on_form="true" />
+        <Rule path="/protocol[at0042]/items[at0044]" max="0" />
+        <Rule path="/protocol[at0042]/items[at0048]" max="0" />
+        <Rule path="/protocol[at0042]/items[at0045]" max="0" />
+        <Rule path="/protocol[at0042]/items[at0047]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.exclusion-adverse_reaction.v1" concept_name="Exclusion of an Adverse Reaction" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002.1]" default="No known adverse reactions" />
+        <Rule path="/data[at0001]/items[at0003.1]" max="0" />
+        <Rule path="/data[at0001]/items[at0007]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" default="No information available about adverse reactions." />
+        <Rule path="/protocol[at0003]" hide_on_form="true" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="2. Diseases and Conditions">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" concept_name="Problem/Diagnosis" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" name="1.9/10 Diagnosis">
+          <constraint xsi:type="textConstraint">
+            <termQueryId terminologyID="epSOS" terminologyLang="en-GB" queryName="IllnessesandDisorders" />
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0009]" max="0" />
+        <Rule path="/data[at0001]/items[at0005]" max="0" />
+        <Rule path="/data[at0001]/items[at0003]" name="1.11 Date of onset" />
+        <Rule path="/data[at0001]/items[at0004]" max="0" />
+        <Rule path="/data[at0001]/items[at0012]" max="0" />
+        <Rule path="/data[at0001]/items[at0018]" max="0" />
+        <Rule path="/data[at0001]/items[at0027]" max="0" />
+        <Rule path="/data[at0001]/items[at0030]" name="1.12 Date of Resolution" />
+        <Rule path="/data[at0001]/items[at0031]" max="0" />
+        <Rule path="/protocol[at0032]" hide_on_form="true" />
+        <Rule path="/protocol[at0032]/items[at0035]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.exclusion-problem_diagnosis.v1" concept_name="Exclusion of a Problem/Diagnosis" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002.1]" default="No significant past problems" />
+        <Rule path="/data[at0001]/items[at0003.1]" max="0" />
+        <Rule path="/data[at0001]/items[at0007]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" default="No information available about diseases and conditions" />
+        <Rule path="/protocol[at0003]" hide_on_form="true" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="3. Vaccinations">
+      <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.medication-vaccination_sl.v1" concept_name="Vaccination" path="/items">
+        <Rule path="/description[at0017]" hide_on_form="true" />
+        <Rule path="/description[at0017]/items[at0020.1]" name="1.13/14 Vaccine Product">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Coded_text</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/description[at0017]/items[at0033]" max="0" />
+        <Rule path="/description[at0017]/items[at0021]" max="0" />
+        <Rule path="/description[at0017]/items[at0024]" max="0" />
+        <Rule path="/description[at0017]/items[at0025]" max="0" />
+        <Rule path="/description[at0017]/items[at0036]" max="0" />
+        <Rule path="/description[at0017]/items[at0.92]" max="0" />
+        <Rule path="/description[at0017]/items[at0.93]" max="0" />
+        <Rule path="/protocol[at0030]" hide_on_form="true" />
+        <Rule path="/protocol[at0030]/items[at0026]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0040]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0031]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0037]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0032]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0038]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0.56]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0.61]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0.57]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0.60]" max="0" />
+        <Rule path="/protocol[at0030]/items[at0.63]/items[at0.58]" name="1.14/5 Target disease" />
+        <Rule path="/protocol[at0030]/items[at0.63]/items[at0.62]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.exclusion-medication.v1" concept_name="Exclusion of a Medication" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002.1]" default="No known previous vaccinations" />
+        <Rule path="/data[at0001]/items[at0003.1]" max="0" />
+        <Rule path="/data[at0001]/items[at0007]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+        <Rule path="/protocol[at0006]/items[at0004]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" default="No information on vaccination available." />
+        <Rule path="/protocol[at0003]" hide_on_form="true" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="4. Surgical procedures">
+      <Item xsi:type="ACTION" archetype_id="openEHR-EHR-ACTION.procedure.v1" concept_name="Procedure undertaken" path="/items">
+        <Rule path="/description[at0001]" hide_on_form="true" />
+        <Rule path="/description[at0001]/items[at0002]" name="1.17/18 Procedure">
+          <constraint xsi:type="textConstraint">
+            <termQueryId terminologyID="epSOS" terminologyLang="en-GB" queryName="epSOSProcedures" />
+          </constraint>
+        </Rule>
+        <Rule path="/description[at0001]/items[at0014]" max="0" />
+        <Rule path="/description[at0001]/items[at0051]" max="0" />
+        <Rule path="/description[at0001]/items[at0049]" max="0" />
+        <Rule path="/description[at0001]/items[at0030]" max="0" />
+        <Rule path="/description[at0001]/items[at0048]" max="0" />
+        <Rule path="/description[at0001]/items[at0004]" max="0" />
+        <Rule path="/description[at0001]/items[at0018]" max="0" />
+        <Rule path="/description[at0001]/items[at0015]" max="0" />
+        <Rule path="/description[at0001]/items[at0006]" max="0" />
+        <Rule path="/description[at0001]/items[at0006]" max="1" clone="true" name="1.20 Anaesthetic complications" />
+        <Rule path="/description[at0001]/items[at0058]" max="0" />
+        <Rule path="/description[at0001]/items[at0005]" max="0" />
+        <Rule path="/description[at0001]/items[at0013]" max="0" />
+        <Rule path="/protocol[at0053]" hide_on_form="true" />
+        <Rule path="/protocol[at0053]/items[at0054]" max="0" />
+        <Rule path="/protocol[at0053]/items[at0056]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.exclusion-procedure.v1" concept_name="Exclusion of a Procedure" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002.1]" default="No significant past surgical procedures." />
+        <Rule path="/data[at0001]/items[at0003.1]" max="0" />
+        <Rule path="/data[at0001]/items[at0007]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+        <Rule path="/protocol[at0006]/items[at0004]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" default="No information on surgical procedures available." />
+        <Rule path="/protocol[at0003]" hide_on_form="true" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="5. Medical devices and implants">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.implant_sl.v1" concept_name="In-situ device or implant" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0003]" name="1.23 Date of Insertion" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.device.v1" concept_name="Device" path="/data[at0001]/items[at0002]" hide_on_form="true">
+          <Rule path="/items[at0001]" name="1.21/22 Device name" />
+          <Rule path="/items[at0002]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0016]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0006]" max="0" />
+          <Rule path="/items[at0007]" max="0" />
+          <Rule path="/items[at0013]" max="0" />
+          <Rule path="/items[at0008]" max="0" />
+        </Items>
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.exclusion-procedure.v1" concept_name="Exclusion of a Procedure" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002.1]" default="No history of current medical devices and implants" />
+        <Rule path="/data[at0001]/items[at0003.1]" max="0" />
+        <Rule path="/data[at0001]/items[at0007]" max="0" />
+        <Rule path="/protocol[at0006]" hide_on_form="true" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.absence.v1" concept_name="Absence of Information" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" default="No information on medical devices or implants available." />
+        <Rule path="/protocol[at0003]" hide_on_form="true" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="6. Treatment Recommendations">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.recommendation.v1" concept_name="Recommendation" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" name="1.24 Treatment Recommendation" />
+        <Rule path="/data[at0001]/items[at0003]" max="0" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="7. Disability">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1" concept_name="Clinical Synopsis" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" name="1.25 Autonomy / Disability" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="8. Social history">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.tobacco_use_summary.v1" concept_name="Tobacco Use Summary" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" max="0" />
+        <Rule path="/data[at0001]/items[at0029]/items[at0028]" max="0" />
+        <Rule path="/data[at0001]/items[at0029]/items[at0023]" max="1" name="1.26 Typical Smoked Amount">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Quantity (Frequency)</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0029]/items[at0030]" max="0" />
+        <Rule path="/data[at0001]/items[at0029]/items[at0015]" name="1.27 Date Commenced" />
+        <Rule path="/data[at0001]/items[at0029]/items[at0016]" name="1.28 Date Ceased" />
+        <Rule path="/data[at0001]/items[at0029]/items[at0017]" max="0" />
+        <Rule path="/data[at0001]/items[at0029]/items[at0025]" max="0" />
+        <Rule path="/data[at0001]/items[at0033]" max="0" />
+        <Rule path="/data[at0001]/items[at0034]" max="0" />
+        <Rule path="/data[at0001]/items[at0024]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]" max="0" />
+        <Rule path="/protocol[at0021]" hide_on_form="true" />
+        <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v1" concept_name="Alcohol Use Summary" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" max="0" />
+        <Rule path="/data[at0001]/items[at0024]" name="1.29 Typical Alcohol Consumption">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Quantity (Frequency)</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0025]" max="0" />
+        <Rule path="/data[at0001]/items[at0027]" max="0" />
+        <Rule path="/data[at0001]/items[at0026]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]" max="0" />
+        <Rule path="/protocol[at0021]" hide_on_form="true" />
+        <Rule path="/protocol[at0021]/items[at0022]" max="0" />
+        <Rule path="/protocol[at0021]/items[at0033]" max="0" />
+      </Item>
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.diet_summary_sl.v1" concept_name="Dietary habits summary" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0010]" name="1.30 Dietary description" />
+        <Rule path="/data[at0001]/items[at0011]/items[at0007]" max="0" />
+        <Rule path="/data[at0001]/items[at0011]/items[at0002]" name="1.31 Date Started" />
+        <Rule path="/data[at0001]/items[at0011]/items[at0003]" name="1.32 Date Ended" />
+        <Rule path="/protocol[at0008]" hide_on_form="true" />
+        <Rule path="/protocol[at0008]/items[at0009]" max="0" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="9. Pregnancy">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.pregnancy.v1" concept_name="Pregnancy summary" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0002]" hide_on_form="true">
+          <constraint xsi:type="textConstraint">
+            <excludedValues>local::at0004</excludedValues>
+            <excludedValues>local::at0005</excludedValues>
+            <excludedValues>local::at0006</excludedValues>
+          </constraint>
+        </Rule>
+        <Rule path="/data[at0001]/items[at0007]" max="0" />
+        <Rule path="/data[at0001]/items[at0018]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]" hide_on_form="true" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0013]" name="1.32 Expected date of birth" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0015]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0036]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0034]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0035]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0038]" max="0" />
+        <Rule path="/data[at0001]/items[at0019]/items[at0053]" max="0" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="10. Physical findings">
+      <Item xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.blood_pressure.v1" concept_name="Blood Pressure" path="/items">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0006]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0006]/data[at0003]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0006]/data[at0003]/items[at0004]" name="1.33 Systolic" />
+        <Rule path="/data[at0001]/events[at0006]/data[at0003]/items[at0005]" name="1.34 Diastolic" />
+        <Rule path="/data[at0001]/events[at0006]/data[at0003]/items[at1006]" max="0" />
+        <Rule path="/data[at0001]/events[at0006]/data[at0003]/items[at1007]" max="0" />
+        <Rule path="/data[at0001]/events[at0006]/data[at0003]/items[at0033]" max="0" />
+        <Rule path="/data[at0001]/events[at0006]/state[at0007]" hide_on_form="true" />
+        <Rule path="/data[at0001]/events[at0006]/state[at0007]/items[at0008]" max="0" />
+        <Rule path="/data[at0001]/events[at0006]/state[at0007]/items[at1052]" max="0" />
+        <Rule path="/data[at0001]/events[at0006]/state[at0007]/items[at1043]" max="0" />
+        <Rule path="/data[at0001]/events[at0006]/state[at0007]/items[at1005]" max="0" />
+        <Rule path="/data[at0001]/events[at1042]" max="0" />
+        <Rule path="/protocol[at0011]" hide_on_form="true" />
+        <Rule path="/protocol[at0011]/items[at0013]" max="0" />
+        <Rule path="/protocol[at0011]/items[at1033]" max="0" />
+        <Rule path="/protocol[at0011]/items[at1035]" max="0" />
+        <Rule path="/protocol[at0011]/items[at1038]" max="0" />
+        <Rule path="/protocol[at0011]/items[at1010]" max="0" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="11. Diagnostic Tests">
+      <Item xsi:type="EVALUATION" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1" concept_name="Clinical Synopsis" path="/items" hide_on_form="true">
+        <Rule path="/data[at0001]" hide_on_form="true" />
+      </Item>
+    </Content>
+    <Content xsi:type="SECTION" archetype_id="openEHR-EHR-SECTION.adhoc.v1" concept_name="Adhoc heading" max="1" path="/content" name="12.  Medication Summary">
+      <Item xsi:type="INSTRUCTION" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v1" concept_name="Medication order" path="/items">
+        <Rule path="/activities[at0001]" hide_on_form="true" name="Medication Item" />
+        <Rule path="/activities[at0001]/description[at0002]" hide_on_form="true" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0003]" name="1.35/36 Product Name">
+          <constraint xsi:type="multipleConstraint">
+            <includedTypes>Coded_text</includedTypes>
+          </constraint>
+        </Rule>
+        <Rule path="/activities[at0001]/description[at0002]/items[at0009]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0005]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0008]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]" hide_on_form="true" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0029]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0011]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0012]" name="1.42 Date of onset of treatment" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0016]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0013]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0014]" name="1.41 Duration of treatment" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0015]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0010]/items[at0017]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0044]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0018]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0035]" max="0" />
+        <Rule path="/activities[at0001]/description[at0002]/items[at0023]" max="0" />
+        <Rule path="/protocol[at0031]" hide_on_form="true" />
+        <Rule path="/protocol[at0031]/items[at0038]" max="0" />
+        <Rule path="/protocol[at0031]/items[at0032]" max="0" />
+        <Rule path="/protocol[at0031]/items[at0042]" max="0" />
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_ingredients.v1" concept_name="Medication ingredients" path="/activities[at0001]/description[at0002]/items[at0004]" hide_on_form="true">
+          <Rule path="/items[at0010]" name="1.43 Pharmaceutical dose form" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0001]/items[at0002]" name="1.36/7 Active ingredient">
+            <constraint xsi:type="textConstraint">
+              <termQueryId queryName="2.16.840.1.113883.6.73  (WHO_ATC)" />
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0001]/items[at0010]" max="0" />
+          <Rule path="/items[at0001]/items[at0005]" max="0" />
+          <Rule path="/items[at0001]/items[at0003]" max="0" />
+          <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_amount.v1" concept_name="Medication amount" max="1" path="/items[at0001]/items[at0033]" name="Strength" hide_on_form="true">
+            <Rule path="/items[at0001]" max="0" />
+            <Rule path="/items[at0002]" max="0" />
+            <Rule path="/items[at0003]" name="1.38 Potency" />
+            <Rule path="/items[at0008]" max="0" />
+            <Rule path="/items[at0007]" max="0" />
+          </Items>
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.medication_amount.v1" concept_name="Medication amount" max="1" path="/activities[at0001]/description[at0002]/items[at0006]" name="Structured dose" hide_on_form="true">
+          <Rule path="/items[at0001]" name="1.39 Number of Units per intake" />
+          <Rule path="/items[at0002]">
+            <constraint xsi:type="textConstraint">
+              <termQueryId terminologyID="epSOS" terminologyLang="en-GB" queryName="Units" />
+            </constraint>
+          </Rule>
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0008]" max="0" />
+          <Rule path="/items[at0007]" max="0" />
+        </Items>
+        <Items xsi:type="CLUSTER" archetype_id="openEHR-EHR-CLUSTER.timing.v1" concept_name="Timing" max="1" path="/activities[at0001]/description[at0002]/items[at0010]/items[at0037]" hide_on_form="true">
+          <Rule path="/items[at0001]" max="0" />
+          <Rule path="/items[at0003]" max="0" />
+          <Rule path="/items[at0014]" max="0" />
+          <Rule path="/items[at0015]" max="0" />
+          <Rule path="/items[at0019]" max="0" />
+          <Rule path="/items[at0004]" max="0" />
+          <Rule path="/items[at0006]" max="0" />
+          <Rule path="/items[at0005]" max="0" />
+          <Rule path="/items[at0018]" max="0" />
+          <Rule path="/items[at0022]" name="1.40 Frequency of intake" />
+        </Items>
+      </Item>
+    </Content>
+    <Context>
+      <Rule path="/context/other_context[at0001]" hide_on_form="true" />
+      <Rule path="/context/other_context[at0001]/items[at0002]" max="0" />
+      <Rule path="/context/other_context[at0001]/items[at0005]" max="0" />
+      <hide_on_form>true</hide_on_form>
+    </Context>
+  </definition>
+  <view>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]/data[at0001]/origin">
+      <items id="VisibleInView">
+        <value>Date</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/items[openEHR-EHR-OBSERVATION.blood_pressure.v1]/data[at0001]/events[at0006]/time">
+      <items id="VisibleInView">
+        <value>Date</value>
+      </items>
+    </constraints>
+    <constraints path="[openEHR-EHR-COMPOSITION.report.v1]/content[openEHR-EHR-SECTION.adhoc.v1]/feeder_audit">
+      <items id="VisibleInView">
+        <value>Narrative</value>
+      </items>
+    </constraints>
+  </view>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-COMPOSITION.report.v1">
+    <digest id="MD5-CAM-1.0.1">88F460F92F80BBC99C78E88B92CAF457</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-SECTION.adhoc.v1">
+    <digest id="MD5-CAM-1.0.1">6FD3128A583EB7081153D0265245E1FA</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.adverse_reaction.v1">
+    <digest id="MD5-CAM-1.0.1">55EEAE6E491764EAADF3B495DA9BA58D</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.exclusion-adverse_reaction.v1">
+    <digest id="MD5-CAM-1.0.1">E16FAA97344C551556B200E2559F9CC7</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.absence.v1">
+    <digest id="MD5-CAM-1.0.1">5E7736AF504436AC63CA11F0BC42CE91</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+    <digest id="MD5-CAM-1.0.1">2CD426CD82409C217348260593A062A2</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.exclusion-problem_diagnosis.v1">
+    <digest id="MD5-CAM-1.0.1">4C8CAFC70D510CF617DD5B580BFDA8F6</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.medication-vaccination_sl.v1">
+    <digest id="MD5-CAM-1.0.1">6675BB73BF8B3CB49FCA92B49A88C626</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.exclusion-medication.v1">
+    <digest id="MD5-CAM-1.0.1">20AE44E213800D8CCFE164F6B7515D8F</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-ACTION.procedure.v1">
+    <digest id="MD5-CAM-1.0.1">3D7A4FCD75127BBE8C9873FF487C6C44</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.exclusion-procedure.v1">
+    <digest id="MD5-CAM-1.0.1">EC8697A3EB07A9B28FD861E7E4037215</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.implant_sl.v1">
+    <digest id="MD5-CAM-1.0.1">0C0EC59815CA3120EA59C3B690599892</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.device.v1">
+    <digest id="MD5-CAM-1.0.1">38767B9045EDF303C0C56C0FF623BF00</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.recommendation.v1">
+    <digest id="MD5-CAM-1.0.1">CDA21DA21BC8B9BF99463E34378CA613</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1">
+    <digest id="MD5-CAM-1.0.1">2D066E7C501C2DAEC625DEE2ECD81DF4</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.tobacco_use_summary.v1">
+    <digest id="MD5-CAM-1.0.1">3E9C0C9426B322BA4C68464D98138410</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.alcohol_use_summary.v1">
+    <digest id="MD5-CAM-1.0.1">B380D590E3A1AA1FFEDD68F7B061FAB4</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.diet_summary_sl.v1">
+    <digest id="MD5-CAM-1.0.1">09AFB2557CF383D887EAC1032715E390</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-EVALUATION.pregnancy.v1">
+    <digest id="MD5-CAM-1.0.1">97D5CFBB64F80F587B48F6D6AD2B3BE1</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-OBSERVATION.blood_pressure.v1">
+    <digest id="MD5-CAM-1.0.1">ECB15524E65241BBA1CC7DBA9CB22C19</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-INSTRUCTION.medication_order.v1">
+    <digest id="MD5-CAM-1.0.1">D5790F31A138C0739762D5B122388136</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medication_ingredients.v1">
+    <digest id="MD5-CAM-1.0.1">C4AFB245015FC6A74D6E08C5517B7B58</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.medication_amount.v1">
+    <digest id="MD5-CAM-1.0.1">2EE9A6D534B48D4795756F3ECFCDE0DF</digest>
+  </integrity_checks>
+  <integrity_checks xsi:type="ArchetypeIntegrity" archetype_id="openEHR-EHR-CLUSTER.timing.v1">
+    <digest id="MD5-CAM-1.0.1">EFBA7E8A2D9F5834E80C40F5A2E119E1</digest>
+  </integrity_checks>
+</template>
