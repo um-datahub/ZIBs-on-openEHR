@@ -1,0 +1,162 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-EVALUATION.implant_sl.v1
+
+concept
+	[at0000]	-- In-situ device or implant
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			author = <
+				["name"] = <"?">
+				["organisation"] = <"Slovenian MoH">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"Ocean Informatics, UK">
+		["email"] = <"ian.mcnicoll@oceaninformatics.com">
+		["date"] = <"2014-02-02">
+	>
+	details = <
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"*To record details of an in-situ medical device or implant.(en)">
+			use = <"*Use to record details of the active presence, within the patient's body of a medical device or implant. (en)">
+			keywords = <"*implant(en)", "*device(en)", "*in-situ(en)", "*pacemaker(en)">
+			misuse = <"*Should not be used to record the procedure of inserting or removing the implant.(en)">
+			copyright = <"*(en)">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record details of an in-situ medical device or implant.">
+			use = <"Use to record details of the active presence, within the patient's body of a medical device or implant.">
+			keywords = <"implant", "device", "in-situ", "pacemaker">
+			misuse = <"Should not be used to record the procedure of inserting or removing the implant.">
+		>
+	>
+	lifecycle_state = <"AuthorDraft">
+	other_contributors = <"Heather Leslie, Ocean Informatics, Australia", ...>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"0C0EC59815CA3120EA59C3B690599892">
+	>
+
+definition
+	EVALUATION[at0000] matches {	-- In-situ device or implant
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {1..*; unordered} matches {
+					allow_archetype CLUSTER[at0002] occurrences matches {1..*} matches {	-- Implanted device
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1/}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Date of insertion
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- Magnetic Resonance (MR) compatibilty
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0006] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0007] occurrences matches {0..1} matches {	-- Date last updated
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"In-situ device or implant">
+					description = <"Details of an in-situ medical device or implant.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Implanted device">
+					description = <"Details of the in-situ device.">
+				>
+				["at0003"] = <
+					text = <"Date of insertion">
+					description = <"The date at which the device was inserted.">
+				>
+				["at0004"] = <
+					text = <"Magnetic Resonance (MR) compatibilty">
+					description = <"Information on safe use of the device in the context of Magentic Resonance Imaging.">
+				>
+				["at0005"] = <
+					text = <"Comment">
+					description = <"Any other comment about the implant or medical device.">
+				>
+				["at0006"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0007"] = <
+					text = <"Date last updated">
+					description = <"The most recent date at which information about the device or impant was updated or verified as being correct.">
+				>
+			>
+		>
+		["sl"] = <
+			items = <
+				["at0000"] = <
+					text = <"*In-situ device or implant(en)">
+					description = <"*Details of an in-situ medical device or implant.(en)">
+				>
+				["at0001"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0002"] = <
+					text = <"*Implanted device (en)">
+					description = <"*Details of the in-situ device.(en)">
+				>
+				["at0003"] = <
+					text = <"*Date of insertion(en)">
+					description = <"*The date at which the device was inserted.(en)">
+				>
+				["at0004"] = <
+					text = <"*Magnetic Resonance (MR) compatibilty(en)">
+					description = <"*Information on safe use of the device in the context of Magentic Resonance Imaging.(en)">
+				>
+				["at0005"] = <
+					text = <"*Comment(en)">
+					description = <"*Any other comment about the implant or medical device.(en)">
+				>
+				["at0006"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0007"] = <
+					text = <"*Date last updated(en)">
+					description = <"*The most recent date at which information about the device or impant was updated or verified as being correct.(en)">
+				>
+			>
+		>
+	>
