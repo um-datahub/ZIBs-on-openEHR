@@ -1,0 +1,12 @@
+﻿Arcehtype_naam,openehr_node_id,OpenEHR_node_naam,openehr_terminology,ZIB_Id,ZIB_Concept,ZIB_node_naam,ZIB_DefinitieCode,ZIB_Verwijzing,mapping_commentaar
+Blood pressure v2,,,,NL-CM:12.4.1,Bloeddruk,,55284-4 Blood pressure systolic and diastolic,,
+,,Methodiek,,NL-CM:12.4.7,,Meetmethode,,MeetmethodeCodelijst,"mapping van OpenEHR is rijker, 2 terminologies?"
+,2,Manchet grootte?,,NL-CM:12.4.9,,ManchetType,70665002 blood pressure cuff,ManchetTypeCodelijst,
+,,structured measurement location,,NL-CM:12.4.10,,MeetLocatie,,MeetLocatieCodelijst,
+,,Diastolic endpoint,,NL-CM:12.4.8,,DiastolischEindpunt,85549003 Korotkoff sound,DiastolischEindpuntCodelijst,mapped !
+,,Systolic,,NL-CM:12.4.2,,SystolischeBloeddruk,8480-6 Systolic blood pressure,,
+,,Diastolic,,NL-CM:12.4.3,,DiastolischeBloeddruk,8462-4 Diastolic blood pressure,,
+,,Mean arterial,,NL-CM:12.4.4,,GemiddeldeBloeddruk,6797001 mean arterial pressure,,
+,,Event date,,NL-CM:12.4.5,,BloeddrukDatumTijd,,,
+,,Comment,,NL-CM:12.4.6,,Toelichting,48767-8 Annotation comment,,
+,,Position,,NL-CM:12.4.11,,Houding,,HoudingCodelijst,CKM updaten?
