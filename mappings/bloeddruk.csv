@@ -1,12 +1,12 @@
-﻿Arcehtype_naam,openehr_node_id,OpenEHR_node_naam,openehr_terminology,ZIB_Id,ZIB_Concept,ZIB_node_naam,ZIB_DefinitieCode,ZIB_Verwijzing,mapping_commentaar
-Blood pressure v2,,,,NL-CM:12.4.1,Bloeddruk,,55284-4 Blood pressure systolic and diastolic,,
-,,Methodiek,,NL-CM:12.4.7,,Meetmethode,,MeetmethodeCodelijst,"mapping van OpenEHR is rijker, 2 terminologies?"
-,2,Manchet grootte?,,NL-CM:12.4.9,,ManchetType,70665002 blood pressure cuff,ManchetTypeCodelijst,
-,,structured measurement location,,NL-CM:12.4.10,,MeetLocatie,,MeetLocatieCodelijst,
-,,Diastolic endpoint,,NL-CM:12.4.8,,DiastolischEindpunt,85549003 Korotkoff sound,DiastolischEindpuntCodelijst,mapped !
-,,Systolic,,NL-CM:12.4.2,,SystolischeBloeddruk,8480-6 Systolic blood pressure,,
-,,Diastolic,,NL-CM:12.4.3,,DiastolischeBloeddruk,8462-4 Diastolic blood pressure,,
-,,Mean arterial,,NL-CM:12.4.4,,GemiddeldeBloeddruk,6797001 mean arterial pressure,,
-,,Event date,,NL-CM:12.4.5,,BloeddrukDatumTijd,,,
-,,Comment,,NL-CM:12.4.6,,Toelichting,48767-8 Annotation comment,,
-,,Position,,NL-CM:12.4.11,,Houding,,HoudingCodelijst,CKM updaten?
+﻿ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
+NL-CM:12.4.1,Bloeddruk,rootconcept,,LOINC: 85354-9 Blood pressure panel with all children optional; SNOMED CT: 46973005 Bloeddrukmeting,,Blood pressure v2,,,,,
+NL-CM:12.4.7,Meetmethode,CD,0..1,,MeetmethodeCodelijst,,Methodiek,,,,"mapping van openEHR is rijker, 2 terminologies?"
+NL-CM:12.4.9,ManchetType,CD,0..1,SNOMED CT: 70665002 Bloeddrukmanchet,ManchetTypeCodelijst,,Manchet grootte?,,,,
+NL-CM:12.4.10,MeetLocatie,CD,0..1,,MeetLocatieCodelijst,,structured measurement location,,,,
+NL-CM:12.4.8,DiastolischEindpunt,CD,0..1,SNOMED CT: 85549003 Korotkofftonen,DiastolischEindpuntCodelijst,,Diastolic endpoint,,,,mapped !
+NL-CM:12.4.2,SystolischeBloeddruk,PQ,1,LOINC: 8480-6 Systolic blood pressure,,,Systolic,,,,
+NL-CM:12.4.3,DiastolischeBloeddruk,PQ,1,LOINC: 8462-4 Diastolic blood pressure,,,Diastolic,,,,
+NL-CM:12.4.4,GemiddeldeBloeddruk,PQ,0..1,SNOMED CT: 6797001 Gemiddelde bloeddruk,,,Mean arterial,,,,
+NL-CM:12.4.5,BloeddrukDatumTijd,TS,1,,,,Event date,,,,
+NL-CM:12.4.6,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,Comment,,,,
+NL-CM:12.4.11,Houding,CD,0..1,,HoudingCodelijst,,Position,,,,CKM updaten?

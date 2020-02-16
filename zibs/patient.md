@@ -2,7 +2,6 @@
 layout: zib
 parent: Mappings
 title: Patient
-mapping: patient
 version: 1.0
 zib:
     name: Patient-v3.1.1
@@ -20,8 +19,8 @@ date: 2020-01-20T
 authors:
     - Sebastian Iancu, Code24
     - Wouter Zanen, EuroTransplant
-categories: [BgZ, GGZ]
-tags: [patient, person, demographics]
+categories: [BgZ, Administratief]
+tags: [administratief, admin, patient, person]
 ---
 
 <h2>Comments</h2>

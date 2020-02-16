@@ -2,11 +2,10 @@
 layout: zib
 parent: Mappings
 title: Bloeddruk
-mapping: bloeddruk
 version: 1.0
 zib:
-    name: Bloeddruk-v3.1
-    url: https://zibs.nl/wiki/Bloeddruk-v3.1(2019NL)
+    name: Bloeddruk-v3.2
+    url: https://zibs.nl/wiki/Bloeddruk-v3.2(2019NL)
 openEHR:
     template: Bloeddruk-v3.1(2019NL)
     ckm: 
@@ -15,10 +14,11 @@ status:
     mapping: Doing
     template: Draft
     translation: Todo
-    review: Final
+    review: Draft
 date: 2020-01-20T
-categories: [BgZ]
-tags: [vital_signs]
+authors:
+categories: [BgZ, Metingen]
+tags: [measurements, blood_pressure, vital_signs]
 ---
 
 
