@@ -1,29 +1,24 @@
 ---
-title: Bloeddruk
-has_children: false
-nav_order: 4
-name: zib_bloeddruk_v0
-status: Doing
-content_status: Doing
-translation_status: Doing
-fhirtest_status: Todo
-type: Observation
-zib_naam: Bloeddruk-v3.1(2019NL)
 layout: zib
-zib_url: https://zibs.nl/wiki/Bloeddruk-v3.1(2019NL)
-# ckm:
-# 	arcehtype_id: openEHR-EHR-OBSERVATION.blood_pressure.v2 
-# 	url: https://www.openehr.org/ckm/archetypes/1013.1.3574
+parent: Mappings
+title: Bloeddruk
+mapping: bloeddruk
+version: 1.0
+zib:
+    name: Bloeddruk-v3.1
+    url: https://zibs.nl/wiki/Bloeddruk-v3.1(2019NL)
+openEHR:
+    template: Bloeddruk-v3.1(2019NL)
+    ckm: 
+    archetypes: [openEHR-EHR-COMPOSITION.report.v1, openEHR-EHR-OBSERVATION.blood_pressure.v2]
+status:
+    mapping: Doing
+    template: Draft
+    translation: Todo
+    review: Final
+date: 2020-01-20T
+categories: [BgZ]
+tags: [vital_signs]
 ---
-
-# {{page.title}}
-
-naam: {{page.name}}
-
-
-## Referenties
-
-ckm: [{{page.ckm.arcehtype_id}}]({{page.ckm.url}})
-
 
 
