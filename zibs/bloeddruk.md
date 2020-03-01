@@ -16,7 +16,7 @@ status:
     translation: Draft
     review: Draft
 date: 2020-03-01T
-authors: Wouter Zanen, Sebastian Iancu
+authors: [Wouter Zanen, Sebastian Iancu]
 categories: [BgZ, Metingen]
 tags: [measurements, blood_pressure, vital_signs]
 ---
