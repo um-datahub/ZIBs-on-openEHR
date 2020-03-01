@@ -1,12 +1,13 @@
 ﻿ZIB_Id,ZIB_Naam,ZIB_Type,ZIB_Card,ZIB_DefCode,ZIB_Verwijzing,openEHR_Path,openEHR_Naam,openEHR_Type,openEHR_Card,openEHR_Term,Commentaar
-NL-CM:12.4.1,Bloeddruk,rootconcept,,LOINC: 85354-9 Blood pressure panel with all children optional; SNOMED CT: 46973005 Bloeddrukmeting,,Blood pressure v2,,,,,
-NL-CM:12.4.7,Meetmethode,CD,0..1,,MeetmethodeCodelijst,,Methodiek,,,,"mapping van openEHR is rijker, 2 terminologies?"
-NL-CM:12.4.9,ManchetType,CD,0..1,SNOMED CT: 70665002 Bloeddrukmanchet,ManchetTypeCodelijst,,Manchet grootte?,,,,
-NL-CM:12.4.10,MeetLocatie,CD,0..1,,MeetLocatieCodelijst,,structured measurement location,,,,
-NL-CM:12.4.8,DiastolischEindpunt,CD,0..1,SNOMED CT: 85549003 Korotkofftonen,DiastolischEindpuntCodelijst,,Diastolic endpoint,,,,mapped !
-NL-CM:12.4.2,SystolischeBloeddruk,PQ,1,LOINC: 8480-6 Systolic blood pressure,,,Systolic,,,,
-NL-CM:12.4.3,DiastolischeBloeddruk,PQ,1,LOINC: 8462-4 Diastolic blood pressure,,,Diastolic,,,,
-NL-CM:12.4.4,GemiddeldeBloeddruk,PQ,0..1,SNOMED CT: 6797001 Gemiddelde bloeddruk,,,Mean arterial,,,,
-NL-CM:12.4.5,BloeddrukDatumTijd,TS,1,,,,Event date,,,,
-NL-CM:12.4.6,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,,Comment,,,,
-NL-CM:12.4.11,Houding,CD,0..1,,HoudingCodelijst,,Position,,,,CKM updaten?
+NL-CM:12.4.1,Bloeddruk,rootconcept,,LOINC: 85354-9 Blood pressure panel with all children optional; SNOMED CT: 46973005 Bloeddrukmeting,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2],"	
+Bloeddruk",OBSERVATION,1,,
+NL-CM:12.4.7,Meetmethode,CD,0..1,,MeetmethodeCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/protocol[at0011]/items[at1035],Methodiek,DV_CODED_TEXT,0..1,,"mapping van openEHR is rijker, 2 terminologies?"
+NL-CM:12.4.9,ManchetType,CD,0..1,SNOMED CT: 70665002 Bloeddrukmanchet,ManchetTypeCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/protocol[at0011]/items[at0013],Manchet grootte,DV_CODED_TEXT,0..1,,
+NL-CM:12.4.10,MeetLocatie,CD,0..1,,MeetLocatieCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/protocol[at0011]/items[at0014],Lichaamslocatie van de meting,DV_CODED_TEXT,0..1,,
+NL-CM:12.4.8,DiastolischEindpunt,CD,0..1,SNOMED CT: 85549003 Korotkofftonen,DiastolischEindpuntCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/protocol[at0011]/items[at1010],Diastolisch eindpunt,DV_CODED_TEXT,0..1,,mapped !
+NL-CM:12.4.2,SystolischeBloeddruk,PQ,1,LOINC: 8480-6 Systolic blood pressure,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/data[at0003]/items[at0004],Systolisch,DV_QUANTITY,1,SNOMED-CT::271649006,
+NL-CM:12.4.3,DiastolischeBloeddruk,PQ,1,LOINC: 8462-4 Diastolic blood pressure,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/data[at0003]/items[at0005],Diastolisch,DV_QUANTITY,1,SNOMED-CT::271650006,
+NL-CM:12.4.4,GemiddeldeBloeddruk,PQ,0..1,SNOMED CT: 6797001 Gemiddelde bloeddruk,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/data[at0003]/items[at1006],Gemiddelde arteriële druk,DV_QUANTITY,0..1,,
+NL-CM:12.4.5,BloeddrukDatumTijd,TS,1,,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/time,Event date,DV_DATE_TIME,1,,
+NL-CM:12.4.6,Toelichting,ST,0..1,LOINC: 48767-8 Annotation comment [Interpretation] Narrative,,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/data[at0003]/items[at0033],Opmerking,DV_TEXT,0..1,,
+NL-CM:12.4.11,Houding,CD,0..1,,HoudingCodelijst,/content[openEHR-EHR-OBSERVATION.blood_pressure.v2]/data[at0001]/events[at0006]/state[at0007]/items[at0008],Houding,DV_CODED_TEXT,0..1,,CKM updaten?
