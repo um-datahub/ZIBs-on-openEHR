@@ -11,10 +11,10 @@ openEHR:
     ckm: 
     archetypes: []
 status:
-    mapping: Todo
-    template: Todo
-    translation: Todo
-    review: Doing
+    mapping: Inrichten
+    template: Inrichten
+    translation: Inrichten
+    global: Inrichten
 date: 2020-02-16T
 authors:
 categories: [BgZ, Administratief]

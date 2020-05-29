@@ -11,10 +11,10 @@ openEHR:
     ckm: 
     archetypes: []
 status:
-    mapping: Todo
-    template: Todo
-    translation: Todo
-    review: Doing
+    mapping: Inrichten
+    template: Ontwikkelen
+    translation: Inrichten
+    global: Ontwikkelen
 date: 2020-01-20T
 authors:
     - Sebastian Iancu, Code24

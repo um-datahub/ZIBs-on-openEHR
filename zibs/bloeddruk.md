@@ -11,10 +11,10 @@ openEHR:
     ckm: 
     archetypes: [openEHR-EHR-COMPOSITION.report.v1, openEHR-EHR-OBSERVATION.blood_pressure.v2]
 status:
-    mapping: Doing
-    template: Draft
-    translation: Draft
-    review: Draft
+    mapping: Ontwikkelen
+    template: Concept
+    translation: Concept
+    global: Ontwikkelen
 date: 2020-03-01T
 authors: [Wouter Zanen, Sebastian Iancu]
 categories: [BgZ, Metingen]
