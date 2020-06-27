@@ -119,14 +119,16 @@ data:
 # ZIB's 
 
 Zorginformatiebouwstenen worden gebruikt om inhoudelijke (niet technische) afspraken vast te leggen ten behoeve van het standaardiseren van informatie, die gebruikt wordt in het zorgproces. 
-Meer informatie zijn 
+Meer informatie zijn beschikbaar bij de ['Registratie aan de bron'](https://www.registratieaandebron.nl/over-het-programma) programma.
 
-Om de mapping te realiseren, we gebruiken de [huidige (pre)publicatie 2019-2(NL)](https://zibs.nl/wiki/ZIB_Publicatie_2019(NL)):
+Om de mapping te realiseren, gebruiken we de [huidige (pre)publicatie 2019-2(NL)](https://zibs.nl/wiki/ZIB_Publicatie_2019(NL)).
+Hieronder een overzicht van alle gedefineerde zibs en ook degene die al in ontwikkeling zijn:
 
 {% assign mappingsPages = site.pages | where: 'parent', 'Mappings' %}
+
 {% for categoryInfo in page.data %}
 {% assign category=categoryInfo[0] %}
-{% assign zibs=categoryInfo[1] | sort '%}
+{% assign zibs=categoryInfo[1] | sort %}
 ### groep: {{ category }}, aantal: {{ zibs | size }} 
 <table>
     {% tablerow zib in zibs cols:3 %}
