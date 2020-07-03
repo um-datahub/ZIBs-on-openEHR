@@ -344,7 +344,7 @@ No se debe usar para registrar resultados de laboratorio o imagenología.
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"de83b7e6342196092e518566cec6c3d7">
+		["MD5-CAM-1.0.1"] = <"294afb5dffebc7f126b6af028e7422e4">
 		["build_uid"] = <"bddf8920-9c0a-4e92-b538-8117e1cab358">
 		["revision"] = <"1.0.6">
 	>
@@ -363,7 +363,7 @@ definition
 				other_context matches {
 					ITEM_TREE[at0001] matches {    -- Tree
 						items cardinality matches {0..*; unordered} matches {
-							allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Extension
+							allow_archetype CLUSTER[at0002] occurrences matches {1..*} matches {    -- Extension
 								include
 									archetype_id/value matches {/.*/}
 							}
@@ -481,7 +481,7 @@ ontology
 		["nl"] = <
 			items = <
 				["at0000"] = <
-					text = <"encounter">
+					text = <"Encounter">
 					description = <"Interactie, contact of zorggebeurtenis tussen een onderwerp van zorg en zorgverlener(s).">
 				>
 				["at0001"] = <
