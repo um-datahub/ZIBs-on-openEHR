@@ -7,16 +7,25 @@ zib:
     name: Bloeddruk-v3.2.1
     url: https://zibs.nl/wiki/Bloeddruk-v3.2.1(2020NL)
 openEHR:
-    template: Bloeddruk-v3.2.1(2020NL)
+    templates: 
+        - Bloeddruk-v3.2.1(2020NL) 
+        - Bloeddruk Rapportage
+    archetypes: 
+        - archetypes/openEHR-EHR-COMPOSITION.report.v1
+        - archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v2
     ckm: 
-    archetypes: [archetypes/openEHR-EHR-COMPOSITION.report.v1, archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v2]
 status:
     mapping: Concept
     template: Concept
-    translation: Concept
-    global: Ontwikkelen
+    vertaling: Concept
+    codelijst: Ontwikkelen
+    globaal: Ontwikkelen
 date: 2020-10-23T
-authors: [Jelte Zeilstra, Joost Holslag, Sebastian Iancu, Wouter Zanen]
+authors: 
+    - Jelte Zeilstra (Nedap) 
+    - Joost Holslag (Nedap)
+    - Sebastian Iancu (Code24) 
+    - Wouter Zanen (EuroTransplant) 
 categories: [BgZ, Metingen]
 tags: [measurements, blood_pressure, vital_signs]
 ---

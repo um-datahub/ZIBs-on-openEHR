@@ -7,16 +7,23 @@ zib:
     name: Contact-v4.0
     url: https://zibs.nl/wiki/Contact-v4.0(2019NL)
 openEHR:
-    template: 
+    templates: 
+    archetypes: 
+        - openEHR-EHR-COMPOSITION.encounter.v1
+        - openEHR-EHR-SECTION.adhoc.v1
     ckm: 
-    archetypes: []
 status:
     mapping: Inrichten
-    template: Inrichten
-    translation: Inrichten
-    global: Inrichten
-date: 2020-02-16T
+    template: Ontwikkelen
+    vertaling: Ontwikkelen
+    codelijst: Inrichten
+    globaal: Ontwikkelen
+date: 2020-10-09T
 authors:
+    - Jelte Zeilstra (Nedap) 
+    - Joost Holslag (Nedap)
+    - Sebastian Iancu (Code24) 
+    - Wouter Zanen (EuroTransplant) 
 categories: [BgZ, Administratief]
 tags: [administratief, admin]
 ---

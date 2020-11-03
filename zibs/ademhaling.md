@@ -7,16 +7,20 @@ zib:
     name: Ademhaling-v3.2
     url: https://zibs.nl/wiki/Ademhaling-v3.2(2020NL)
 openEHR:
-    template: Ademhaling-v3.2(2020NL)
+    templates: 
+        - Ademhaling-v3.2(2020NL)
+    archetypes: 
+        - archetypes/openEHR-EHR-OBSERVATION.respiration.v2
     ckm: 
-    archetypes: [archetypes/openEHR-EHR-OBSERVATION.respiration.v2]
 status:
     mapping: Ontwikkelen
     template: Ontwikkelen
-    translation: Ontwikkelen
-    global: Ontwikkelen
+    vertaling: Ontwikkelen
+    codelijst: Inrichten
+    globaal: Ontwikkelen
 date: 2020-11-03T
-authors: []
+authors: 
+    - Joost Holslag (Nedap)
 categories: [BgZ, Metingen]
 tags: [measurements, respiration, vital_signs]
 ---

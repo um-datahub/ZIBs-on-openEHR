@@ -7,14 +7,15 @@ zib:
     name: Contactpersoon-v3.3
     url: https://zibs.nl/wiki/Contactpersoon-v3.3(2019NL)
 openEHR:
-    template: 
+    templates: 
+    archetypes: 
     ckm: 
-    archetypes: []
 status:
     mapping: Inrichten
     template: Inrichten
-    translation: Inrichten
-    global: Inrichten
+    vertaling: Inrichten
+    codelijst: Inrichten
+    globaal: Inrichten
 date: 2020-02-16T
 authors:
 categories: [BgZ, Administratief]
