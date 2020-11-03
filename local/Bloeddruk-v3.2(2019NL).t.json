@@ -6,23 +6,25 @@
     "originalAuthor" : {
       "organisation" : "openEHR-NL",
       "email" : "info@openehr.nl",
-      "date" : "2020-03-01"
+      "date" : "2020-10-23",
+      "name" : "ZIBs-on-openEHR"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "release_candidate"
     },
     "ipAcknowledgements" : { },
     "references" : { },
     "conversionDetails" : { },
     "otherDetails" : {
       "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
-      "custodian_organisation" : "openEHR Foundation",
+      "custodian_organisation" : "Stichting openEHR Nederland",
       "original_namespace" : "org.openehr",
-      "original_publisher" : "openEHR Foundation",
+      "original_publisher" : "Stichting openEHR Nederland",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ea423a3c3a81ee7f362edd19d942ea5e",
-      "PARENT:MD5-CAM-1.0.1" : "E3BC8668BB89A4BD43BF551931977A9D"
+      "MD5-CAM-1.0.1" : "decaeb6506af2178c2e0cd3c1210002f",
+      "PARENT:MD5-CAM-1.0.1" : "DE0723367AA22BB716CEC5342B21FF60",
+      "references" : "https://openehr-nl.github.io/ZIBs-on-openEHR/zibs/bloeddruk.html"
     },
     "details" : {
       "de" : {
@@ -150,6 +152,20 @@
         "use" : "Usato come archetipo generico per veicolare informazioni che devono essere condivise con gli altri.\n\nI casi di uso comune sono: documentare una risposta a una richiesta di informazioni; l'esito di un test; le attività che sono state eseguite; o gli eventi che si sono verificati.\n\nLa componente principale delle Sections/Content è stata deliberatamente lasciata libera. Ciò consentirà di popolarla con qualsiasi archetipo di SECTION o di ENTRY appropriato per lo scopo clinico all'interno di un template.",
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "purpose" : "De bloeddruk is een parameter om de toestand van de bloedsomloop vast te leggen en wordt uitgedrukt in de systolische en diastolische druk in mmHg.",
+        "keywords" : [ "Bloeddruk ZIB" ],
+        "use" : "",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -257,18 +273,19 @@
       },
       "ko" : { },
       "fi" : { },
-      "it" : { }
+      "it" : { },
+      "nl" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "b057d0e0-45b9-3d97-ab87-3004b7f6d386",
+  "buildUid" : "d15828fa-cf5a-35d4-b43c-0781836f5d34",
   "rmName" : "openehr",
   "rmRelease" : "1.0.3",
   "generated" : true,
-  "templateId" : "Bloeddruk-v3.2(2019NL)",
+  "templateId" : "Bloeddruk-v3.2.1(2020NL)",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
@@ -281,7 +298,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1999263306231628D640469E8236EF67"
+        "PARENT:MD5-CAM-1.0.1" : "170F2F8FCE46E22662FC61919622AE21"
       },
       "details" : {
         "de" : {
@@ -1148,6 +1165,19 @@
       "name" : "Francesca Frexia",
       "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
       "email" : "francesca.frexia@crs4.it"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : {
+      "name" : "Pieter Bos, Jelte Zeilstra",
+      "organisation" : "Nedap Healthcare"
     },
     "otherDetails" : { }
   } ]
