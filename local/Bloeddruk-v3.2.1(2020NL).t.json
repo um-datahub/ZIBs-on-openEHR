@@ -23,8 +23,9 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "reference" : "https://openehr-nl.github.io/ZIBs-on-openEHR/zibs/bloeddruk.html",
-      "MD5-CAM-1.0.1" : "48e2a2d65d01e6fa7e439474f70de4ab",
-      "PARENT:MD5-CAM-1.0.1" : "170F2F8FCE46E22662FC61919622AE21"
+      "MD5-CAM-1.0.1" : "f82d86fa7dcb27f9e1ff55637bc2a27c",
+      "PARENT:MD5-CAM-1.0.1" : "170F2F8FCE46E22662FC61919622AE21",
+      "build_uid" : "60ab6e89-7819-46c5-abc5-27b930f71c33"
     },
     "details" : {
       "de" : {
@@ -231,7 +232,7 @@
           "rmAttributeName" : "events",
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "EVENT",
+            "rmTypeName" : "POINT_EVENT",
             "occurrences" : "1..1",
             "nodeId" : "at0006.1",
             "attributes" : [ {
@@ -255,7 +256,17 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_QUANTITY",
-                        "attributes" : [ ],
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "property",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "openehr"
+                            },
+                            "constraint" : [ "125" ]
+                          } ]
+                        } ],
                         "attributeTuples" : [ {
                           "@type" : "C_ATTRIBUTE_TUPLE",
                           "members" : [ {
@@ -316,7 +327,17 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_QUANTITY",
-                        "attributes" : [ ],
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "property",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "openehr"
+                            },
+                            "constraint" : [ "125" ]
+                          } ]
+                        } ],
                         "attributeTuples" : [ {
                           "@type" : "C_ATTRIBUTE_TUPLE",
                           "members" : [ {
@@ -377,7 +398,17 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_QUANTITY",
-                        "attributes" : [ ],
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "property",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "openehr"
+                            },
+                            "constraint" : [ "125" ]
+                          } ]
+                        } ],
                         "attributeTuples" : [ {
                           "@type" : "C_ATTRIBUTE_TUPLE",
                           "members" : [ {
@@ -495,7 +526,17 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_QUANTITY",
-                        "attributes" : [ ],
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "property",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "openehr"
+                            },
+                            "constraint" : [ "497" ]
+                          } ]
+                        } ],
                         "attributeTuples" : [ {
                           "@type" : "C_ATTRIBUTE_TUPLE",
                           "members" : [ {
@@ -565,28 +606,6 @@
             "nodeId" : "at1042.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "data",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "ITEM_TREE",
-                "nodeId" : "at0003.2",
-                "targetPath" : "/data[at0001]/events[at0006]/data[at0003.1]",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              } ]
-            }, {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "state",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "ITEM_TREE",
-                "nodeId" : "at0007.2",
-                "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              } ]
-            }, {
-              "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "math_function",
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
@@ -597,6 +616,7 @@
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
+                    "occurrences" : "1..1",
                     "terminologyId" : {
                       "value" : "openehr"
                     },
@@ -628,6 +648,28 @@
                     } ]
                   } ]
                 } ],
+                "attributeTuples" : [ ]
+              } ]
+            }, {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "data",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ITEM_TREE",
+                "nodeId" : "at0003.2",
+                "targetPath" : "/data[at0001]/events[at0006]/data[at0003.1]",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            }, {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "state",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ITEM_TREE",
+                "nodeId" : "at0007.2",
+                "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
