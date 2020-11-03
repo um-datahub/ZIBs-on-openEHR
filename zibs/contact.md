@@ -4,8 +4,8 @@ parent: Mappings
 title: Contact
 version: 0.1
 zib:
-    name: Contact-v4.0
-    url: https://zibs.nl/wiki/Contact-v4.0(2019NL)
+    name: Contact-v4.0.1
+    url: https://zibs.nl/wiki/Contact-v4.0.1(2020NL)
 openEHR:
     templates: 
     archetypes: 

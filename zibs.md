@@ -130,7 +130,7 @@ data:
 Zorginformatiebouwstenen worden gebruikt om inhoudelijke (niet technische) afspraken vast te leggen ten behoeve van het standaardiseren van informatie, die gebruikt wordt in het zorgproces. 
 Meer informatie zijn beschikbaar bij de ['Registratie aan de bron'](https://www.registratieaandebron.nl/over-het-programma) programma.
 
-Om de mapping te realiseren, gebruiken we de [huidige publicatie 2020(NL)](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)).
+Om de mapping te realiseren, gebruiken we de huidige [publicatie 2020(NL)](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)).
 Hieronder een overzicht van alle gedefineerde zibs en ook degene die al in ontwikkeling zijn:
 
 {% assign mappingsPages = site.pages | where: 'parent', 'Mappings' %}

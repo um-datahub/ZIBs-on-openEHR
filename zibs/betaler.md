@@ -4,8 +4,8 @@ parent: Mappings
 title: Betaler
 version: 0.1
 zib:
-    name: Betaler-v3.1
-    url: https://zibs.nl/wiki/Betaler-v3.1(2019NL)
+    name: Betaler-v3.1.1
+    url: https://zibs.nl/wiki/Betaler-v3.1.1(2020NL)
 openEHR:
     templates: 
     archetypes: 

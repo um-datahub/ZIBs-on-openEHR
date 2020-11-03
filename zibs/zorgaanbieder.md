@@ -4,8 +4,8 @@ parent: Mappings
 title: Zorgaanbieder
 version: 0.1
 zib:
-    name: Zorgaanbieder-v3.3
-    url: https://zibs.nl/wiki/Zorgaanbieder-v3.3(2019NL)
+    name: Zorgaanbieder-v3.4
+    url: https://zibs.nl/wiki/Zorgaanbieder-v3.4(2020NL)
 openEHR:
     templates: 
     archetypes: 

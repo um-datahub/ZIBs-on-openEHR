@@ -4,8 +4,8 @@ parent: Mappings
 title: Contactpersoon
 version: 0.1
 zib:
-    name: Contactpersoon-v3.3
-    url: https://zibs.nl/wiki/Contactpersoon-v3.3(2019NL)
+    name: Contactpersoon-v3.4
+    url: https://zibs.nl/wiki/Contactpersoon-v3.4(2020NL)
 openEHR:
     templates: 
     archetypes: 

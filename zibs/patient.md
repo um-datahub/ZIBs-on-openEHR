@@ -4,8 +4,8 @@ parent: Mappings
 title: Patient
 version: 0.1
 zib:
-    name: Patient-v3.1.1
-    url: https://zibs.nl/wiki/Patient-v3.1.1(2019NL)
+    name: Patient-v3.2
+    url: https://zibs.nl/wiki/Patient-v3.2(2020NL)
 openEHR:
     templates: 
     archetypes: 
