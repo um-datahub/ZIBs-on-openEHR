@@ -2,21 +2,21 @@
 layout: zib
 parent: Mappings
 title: Bloeddruk
-version: 0.1
+version: 0.2
 zib:
-    name: Bloeddruk-v3.2
-    url: https://zibs.nl/wiki/Bloeddruk-v3.2(2019NL)
+    name: Bloeddruk-v3.2.1
+    url: https://zibs.nl/wiki/Bloeddruk-v3.2.1(2020NL)
 openEHR:
-    template: Bloeddruk-v3.2(2019NL)
+    template: Bloeddruk-v3.2.1(2020NL)
     ckm: 
     archetypes: [archetypes/openEHR-EHR-COMPOSITION.report.v1, archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v2]
 status:
-    mapping: Ontwikkelen
+    mapping: Concept
     template: Concept
     translation: Concept
     global: Ontwikkelen
-date: 2020-03-01T
-authors: [Wouter Zanen, Sebastian Iancu]
+date: 2020-10-23T
+authors: [Jelte Zeilstra, Joost Holslag, Sebastian Iancu, Wouter Zanen]
 categories: [BgZ, Metingen]
 tags: [measurements, blood_pressure, vital_signs]
 ---
