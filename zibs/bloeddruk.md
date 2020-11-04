@@ -9,10 +9,10 @@ zib:
 openEHR:
     templates: 
         - Bloeddruk-v3.2.1(2020NL) 
-        - Bloeddruk Rapportage
+        - Bloeddruk rapportage
     archetypes: 
-        - archetypes/openEHR-EHR-COMPOSITION.report.v1
-        - archetypes/openEHR-EHR-OBSERVATION.blood_pressure.v2
+        - openEHR-EHR-COMPOSITION.report.v1
+        - openEHR-EHR-OBSERVATION.blood_pressure.v2
     ckm: 
 status:
     mapping: Concept
@@ -20,7 +20,7 @@ status:
     vertaling: Concept
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
-date: 2020-10-23T
+date: 2020-11-03T
 authors: 
     - Jelte Zeilstra (Nedap) 
     - Joost Holslag (Nedap)

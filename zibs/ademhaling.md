@@ -10,7 +10,7 @@ openEHR:
     templates: 
         - Ademhaling-v3.2(2020NL)
     archetypes: 
-        - archetypes/openEHR-EHR-OBSERVATION.respiration.v2
+        - openEHR-EHR-OBSERVATION.respiration.v2
     ckm: 
 status:
     mapping: Ontwikkelen
