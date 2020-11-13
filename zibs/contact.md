@@ -11,6 +11,9 @@ openEHR:
     archetypes: 
         - openEHR-EHR-COMPOSITION.encounter.v1
         - openEHR-EHR-SECTION.adhoc.v1
+        - openEHR-EHR-ACTION.procedure.v1
+        - openEHR-EHR-CLUSTER.anatomical_location.v1
+        - openEHR-EHR-EVALUATION.problem_diagnosis.v1
     ckm: 
 status:
     mapping: Inrichten
