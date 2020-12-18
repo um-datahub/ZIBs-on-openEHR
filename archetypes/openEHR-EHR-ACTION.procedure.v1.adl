@@ -10,9 +10,9 @@ language
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
-				["name"] = <"Kim Sommer, Natalia Strauch">
-				["organisation"] = <"MHH, Medizinische Hochschule Hannover">
-				["email"] = <"sommer.kimkatrin@mh-hannover.de, Strauch.Natalia@mh-hannover.de">
+				["name"] = <"Kim Sommer">
+				["organisation"] = <"MHH">
+				["email"] = <"sommer.kimkatrin@mh-hannover.de">
 			>
 		>
 		["ru"] = <
@@ -71,7 +71,7 @@ description
 		["email"] = <"heather.leslie@oceaninformatics.com">
 	>
 	lifecycle_state = <"published">
-	other_contributors = <"Morten Aas, Oslo Universitetssykehus, Norway","Tomas Alme, DIPS, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Helse Vest IKT AS, Norway (openEHR Editor)","Kari Beate Engseth, Finnmarkssykehuset HF + Klinikk Kirkenes, Norway","Maria Beate Nupen, Oslo Universitetssykehus, Norway","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Fredrik Borchsenius, Oslo universitetssykehus, Norway","Diego Bosca, VeraTech for Health, Spain","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, NEHTA, Australia (Editor)","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","David Evans, Queensland Health, Australia","Shahla Foozonkhah, Iran ministry of health and education, Iran","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Sebastian Garde, Ocean Informatics, Germany","Jacquie Garton-Smith, Royal Perth Hospital and DoHWA, Australia","Bente Gjelsvik, Helse Bergen, Norway","Andrew Goodchild, NEHTA, Australia","Heather Grain, Llewelyn Grain Informatics, Australia","Megan Hawkins, Mater Health Services, Australia","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Hilde Hollås, DIPS ASA, Norway","Lars Ivar Mehlum, Helse Bergen HF, Norway","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Mary Kelaher, NEHTA, Australia","Shinji Kobayashi, Kyoto University, Japan","Sabine Leh, Haukeland University Hospital, Department of Pathology, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hugh Leslie, Ocean Informatics, Australia","Hallvard Lærum, Norwegian Directorate of e-health, Norway","Mike Martyn, The Hobart Anaesthetic Group, Australia","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Chris Mitchell, RACGP, Australia","Stewart Morrison, NEHTA, Australia","Bjoern Naess, DIPS ASA, Norway","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Michael Osborne, Mater Health Services, Australia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Chris Pearce, Melbourne East GP Network, Australia","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Peter Scott, Australia","Elizabeth Stanick, Hobart Anaesthetic Group, Australia","Norwegian Review Summary, Nasjonal IKT HF, Norway","Line Sørensen, Helse Bergen, Norway","John Taylor, NEHTA, Australia","Micaela Thierley, Helse Bergen, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Line Thomassen, Helse Bergen, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Richard Townley-O'Neill, NEHTA, Australia","Ørjan Vermeer, Haukeland Universitetssjukehus, Kvinneklinikken, Norway","Ivar Yrke, DIPS AS, Norway">
+	other_contributors = <"Morten Aas, Oslo Universitetssykehus, Norway","Tomas Alme, DIPS, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Kari Beate Engseth, Finnmarkssykehuset HF + Klinikk Kirkenes, Norway","Maria Beate Nupen, Oslo Universitetssykehus, Norway","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Fredrik Borchsenius, Oslo universitetssykehus, Norway","Diego Bosca, IBIME group, Spain","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, NEHTA, Australia (Editor)","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","David Evans, Queensland Health, Australia","Shahla Foozonkhah, Iran ministry of health and education, Iran","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Sebastian Garde, Ocean Informatics, Germany","Jacquie Garton-Smith, Royal Perth Hospital and DoHWA, Australia","Bente Gjelsvik, Helse Bergen, Norway","Andrew Goodchild, NEHTA, Australia","Heather Grain, Llewelyn Grain Informatics, Australia","Megan Hawkins, Mater Health Services, Australia","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Hilde Hollås, DIPS ASA, Norway","Lars Ivar Mehlum, Helse Bergen HF, Norway","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Mary Kelaher, NEHTA, Australia","Shinji Kobayashi, Kyoto University, Japan","Sabine Leh, Haukeland University Hospital, Department of Pathology, Norway","Heather Leslie, Ocean Health Systems, Australia (openEHR Editor)","Hugh Leslie, Ocean Informatics, Australia","Hallvard Lærum, Oslo University Hospital, Norway","Mike Martyn, The Hobart Anaesthetic Group, Australia","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Chris Mitchell, RACGP, Australia","Stewart Morrison, NEHTA, Australia","Bjoern Naess, DIPS ASA, Norway","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Michael Osborne, Mater Health Services, Australia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Chris Pearce, Melbourne East GP Network, Australia","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Jussara Rotzsch, UNB, Brazil","Peter Scott, Australia","Elizabeth Stanick, Hobart Anaesthetic Group, Australia","Norwegian Review Summary, Nasjonal IKT HF, Norway","Line Sørensen, Helse Bergen, Norway","John Taylor, NEHTA, Australia","Micaela Thierley, Helse Bergen, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Line Thomassen, Helse Bergen, Norway","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Richard Townley-O'Neill, NEHTA, Australia","Ørjan Vermeer, Haukeland Universitetssjukehus, Kvinneklinikken, Norway","Ivar Yrke, DIPS AS, Norway">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
@@ -213,21 +213,6 @@ Não deve ser usado para gravar detalhes sobre as atividades relacionadas, tais 
 
 Não deve ser usado para gravar uma operação ou procedimento relatório conjunto - usar um modelo em que esse arquétipo é apenas um componente do relatório completo.">
 		>
-		["sl"] = <
-			language = <[ISO_639-1::sl]>
-			purpose = <"Za beleženje podrobnosti o izvedeni aktivnosti">
-			keywords = <"aktivnosti","postopek">
-			copyright = <"© openEHR Foundation">
-			use = <"Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt">
-			misuse = <"Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION">
-		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه">
-			keywords = <"الإجراء الطبي", ...>
-			copyright = <"© openEHR Foundation">
-			use = <"لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion.">
@@ -272,6 +257,21 @@ Not to be used to record details about related activities such as the use of fro
 
 Not to be used to record a whole operation or procedure report - use a template in which this archetype is only one component of the full report.">
 		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه">
+			keywords = <"الإجراء الطبي", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.">
+		>
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"Za beleženje podrobnosti o izvedeni aktivnosti">
+			keywords = <"aktivnosti","postopek">
+			copyright = <"© openEHR Foundation">
+			use = <"Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt">
+			misuse = <"Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION">
+		>
 		["es"] = <
 			language = <[ISO_639-1::es]>
 			purpose = <"Para registrar información sobre las actividades requeridas para ejecutar un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización.">
@@ -290,15 +290,16 @@ No utilizar para registrar detalles acerca del informe de la operación, para es
 		>
 	>
 	other_details = <
-		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
-		["current_contact"] = <"Heather Leslie, Atomica Informatics, heather.leslie@atomicainformatics.com">
+		["references"] = <"Procedure, Draft Archetype [Internet]. National eHealth Transition Authority, Australia, NEHTA Clinical Knowledge Manager [cited: 2015-03-21]. Available from: http://dcm.nehta.org.au/ckm/#showArchetype_1013.1.936.">
+		["current_contact"] = <"Heather Leslie, Ocean Informatics, heather.leslie@oceaninformatics.com">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"108CD01BE8E751B5AA89279E73962671">
-		["build_uid"] = <"b4858e75-fcfe-43ab-8854-88e8e38e42f9">
-		["revision"] = <"1.4.1">
+		["MD5-CAM-1.0.1"] = <"CCA98FC01E850D302CF1E149938C4E54">
+		["build_uid"] = <"5513cbfe-87bb-4539-a3b1-f504f30de2e8">
+		["revision"] = <"1.3.2">
 	>
 
 definition
@@ -510,11 +511,6 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0070] occurrences matches {0..*} matches {    -- Indication
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
 					ELEMENT[at0065] occurrences matches {0..*} matches {    -- Method
 						value matches {
 							DV_TEXT matches {*}
@@ -532,7 +528,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {    -- Procedure detail
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_circle(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v2/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.device(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.anatomical_location_clock(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.anatomical_location_relative(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					ELEMENT[at0048] occurrences matches {0..*} matches {    -- Outcome
 						value matches {
@@ -568,7 +564,7 @@ definition
 					}
 					allow_archetype CLUSTER[at0062] occurrences matches {0..*} matches {    -- Multimedia
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.media_capture(-[a-zA-Z0-9_]+)*\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.multimedia(-[a-zA-Z0-9_]+)*\.v1/}
 					}
 					ELEMENT[at0067] occurrences matches {0..1} matches {    -- Procedure type
 						value matches {
@@ -784,11 +780,6 @@ ontology
 					text = <"*Procedural difficulty(en)">
 					description = <"*Difficulties or issues encountered during the procedure.(en)">
 				>
-				["at0070"] = <
-					text = <"*Indication (en)">
-					description = <"*The clinical or process-related reason for the procedure. (en)">
-					comment = <"*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)">
-				>
 			>
 		>
 		["sl"] = <
@@ -951,11 +942,6 @@ ontology
 				["at0069"] = <
 					text = <"*Procedural difficulty(en)">
 					description = <"*Difficulties or issues encountered during the procedure.(en)">
-				>
-				["at0070"] = <
-					text = <"*Indication (en)">
-					description = <"*The clinical or process-related reason for the procedure. (en)">
-					comment = <"*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)">
 				>
 			>
 		>
@@ -1124,11 +1110,6 @@ ontology
 					description = <"Difficulties or issues encountered during performance of the procedure.">
 					comment = <"Examples: The patient was agitated, insufficient emptying of the stomach before gastroscopy, a tumour in the bile ducts made it impossible to pass the scope through.">
 				>
-				["at0070"] = <
-					text = <"Indication">
-					description = <"The clinical or process-related reason for the procedure.">
-					comment = <"Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'.">
-				>
 			>
 		>
 		["ar-sy"] = <
@@ -1292,11 +1273,6 @@ ontology
 					text = <"*Procedural difficulty(en)">
 					description = <"*Difficulties or issues encountered during the procedure.(en)">
 				>
-				["at0070"] = <
-					text = <"*Indication (en)">
-					description = <"*The clinical or process-related reason for the procedure. (en)">
-					comment = <"*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)">
-				>
 			>
 		>
 		["ru"] = <
@@ -1459,11 +1435,6 @@ ontology
 				["at0069"] = <
 					text = <"*Procedural difficulty(en)">
 					description = <"*Difficulties or issues encountered during the procedure.(en)">
-				>
-				["at0070"] = <
-					text = <"*Indication (en)">
-					description = <"*The clinical or process-related reason for the procedure. (en)">
-					comment = <"*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)">
 				>
 			>
 		>
@@ -1632,11 +1603,6 @@ ontology
 					description = <"Vanskeligheter eller problemer som det ble støtt på under prosedyren.">
 					comment = <"Eksempler: Pasienten var urolig, magen var ikke skikkelig tømt før gastroskopi, en svulst i gallegangene gjorde det umulig å få skopet gjennom.">
 				>
-				["at0070"] = <
-					text = <"*Indication (en)">
-					description = <"*The clinical or process-related reason for the procedure. (en)">
-					comment = <"*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)">
-				>
 			>
 		>
 		["es"] = <
@@ -1801,11 +1767,6 @@ ontology
 					text = <"*Procedural difficulty(en)">
 					description = <"*Difficulties or issues encountered during the procedure.(en)">
 				>
-				["at0070"] = <
-					text = <"*Indication (en)">
-					description = <"*The clinical or process-related reason for the procedure. (en)">
-					comment = <"*Coding of the indication with a terminology is preferred, where possible. This data element allows multiple occurrences. For example: 'Failed bowel preparation' or 'Bowel cancer screening'. (en)">
-				>
 			>
 		>
 		["de"] = <
@@ -1940,7 +1901,7 @@ ontology
 					description = <"Multimediale Darstellung der durchgeführten Prozedur.">
 				>
 				["at0063"] = <
-					text = <"Körperstelle">
+					text = <"Anatomische Lokalisation">
 					description = <"Anatomische Lokalisation, an der die Prozedur durchgeführt wird.">
 					comment = <"Das Vorkommen dieses Datenelements ist nicht eingeschränkt. Dies ermöglicht die Darstellung von klinischen Situationen, in denen alle Eigenschaften, ausgenommen die anatomische Lokalisation, identisch sind, wie z.B. das Entfernen mehrerer Hautläsionen an verschiedenen Stellen. Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte anatomische Lokalisationen aufzunehmen. Wenn die Anforderungen an die Erfassung der anatomischen Lokalisation zur Laufzeit durch die Anwendung festgelegt werden oder komplexere Modellierungen wie z.B. die relative Lokalisation erforderlich sind, verwenden Sie entweder CLUSTER.anatomical_location oder CLUSTER.relative_location innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp. Wird die anatomische Lokalisation über vordefinierte Codes in den Namen der Prozedur aufgenommen, wird dieses Datenelement redundant.">
 				>
@@ -1960,7 +1921,7 @@ ontology
 					comment = <"Nur für die Verwendung in Verbindung mit dem Element \"geplanter Termin der Prozedur\" .">
 				>
 				["at0067"] = <
-					text = <"Art der Prozedur">
+					text = <"Typ der Prozedur">
 					description = <"Die Art der Prozedur.">
 					comment = <"Dieses pragmatische Datenelement kann zur Unterstützung der Gliederung für die Benutzeroberfläche verwendet werden.">
 				>
@@ -1972,11 +1933,6 @@ ontology
 					text = <"Schwierigkeiten bei der Durchführung der Prozedur">
 					description = <"Schwierigkeiten oder Probleme, die während der Durchführung der Prozedur aufgetreten sind.">
 					comment = <"Beispiele: Der Patient war unruhig; unzureichende Entleerung des Magens vor der Gastroskopie; ein Tumor in den Gallengängen machte es unmöglich, den Bereich zu passieren.">
-				>
-				["at0070"] = <
-					text = <"Indikation">
-					description = <"Der klinische oder prozessbezogene Grund für die Prozedur.">
-					comment = <"Die Kodierung der Indikation mit einer Terminologie wird nach Möglichkeit bevorzugt. Dieses Datenelement ermöglicht mehrere Vorkommen. Zum Beispiel: \"Fehlgeschlagenen Darmvorbereitung\" oder \"Darmkrebsvorsorge\".">
 				>
 			>
 		>
