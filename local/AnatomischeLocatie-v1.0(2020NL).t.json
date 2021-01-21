@@ -22,8 +22,8 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "5ff620f1ef74c13dff3dc196faf2cdb8",
-      "PARENT:MD5-CAM-1.0.1" : "ED4D12B1642C61217E416A8C11EE848B"
+      "MD5-CAM-1.0.1" : "c7451e0d712c696061704cae531f6c4c",
+      "PARENT:MD5-CAM-1.0.1" : "5A9429074977A06C119425A2D2F2008B"
     },
     "details" : {
       "de" : {
@@ -95,6 +95,21 @@
           "codeString" : "ar-sy"
         },
         "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "purpose" : "Om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen, in macroscopische anatomische termen.",
+        "keywords" : [ "locatie", "structuur", "anatomisch", "anatomische regio", "topografische anatomie", "macroscopisch" ],
+        "use" : "Gebruik om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen.",
+        "misuse" : "Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
@@ -322,6 +337,20 @@
           "code" : "ac0.2",
           "description" : ""
         }
+      },
+      "nl" : {
+        "ac0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
       }
     },
     "termBindings" : { },
@@ -402,6 +431,20 @@
       "codeString" : "sl"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : {
+      "name" : "Michiel Klitsie",
+      "organisation" : "Nedap Healthcare",
+      "email" : "michiel.klitsie@nedap.com"
+    },
     "otherDetails" : { }
   } ]
 }
