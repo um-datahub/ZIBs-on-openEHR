@@ -42,6 +42,14 @@ language
 				["name"] = <"Biljana Princic">
 			>
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+				["name"] = <"Michiel Klitsie">
+				["organisation"] = <"Nedap Healthcare">
+				["email"] = <"michiel.klitsie@nedap.com">
+			>
+		>
 	>
 
 description
@@ -51,7 +59,7 @@ description
 		["organisation"] = <"Ocean Informatics">
 		["email"] = <"heather.leslie@oceaninformatics.com">
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Grethe Almenning, Bergen kommune, Norway","Tomas Alme, DIPS, Norway","Anne Pauline Anderssen, Helse Nord RHF, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, Helse Bergen HF, Norway (Nasjonal IKT redaktør)","Lars Bitsch-Larsen, Haukeland University Hospital, Bergen, Norway","Rong Chen, Cambio Healthcare Systems, Sweden","Stephen Chu, Queensland Health, Australia","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Aitor Eguzkitza, UPNA (Public University of Navarre) - CHN (Complejo Hospitalario de Navarra), Spain","Shahla Foozonkhah, Ocean Informatics, Australia","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Sebastian Garde, Ocean Informatics, Germany","Bente Gjelsvik, Helse Bergen, Norway","Heather Grain, Llewelyn Grain Informatics, Australia","Sam Heard, Ocean Informatics, Australia","Ingrid Heitmann, NTNU, Norway","Andreas Hering, Helse Bergen HF, Haukeland universitetssjukehus, Norway","Anca Heyd, DIPS ASA, Norway","Dunmail Hodkinson, Black Pear Software Ltd, UK","Erling Are Hole, Helse Bergen, Norway","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Shinji Kobayashi, Kyoto University, Japan","Sabine Leh, Helse-Bergen, Norway","Heather Leslie, Ocean Informatics, Australia (openEHR Editor)","Vesna Levasic, Orthopaedic Hospital Valdoltra, Slovenia","Hallvard Lærum, Oslo Universitetssykehus HF, Norway","Luis Marco Ruiz, Norwegian Center for Integrated Care and Telemedicine, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Erik Nissen, Cambio Healthcare Systems AB, Sweden","Maria Beate Nupen, Oslo Universitetssykehus, Norway","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Jussara Rotzsch, UNB, Brazil","Thomas Schopf, University Hospital of North-Norway, Norway","Nils Thomas Songstad, UNN HF, BUK, Barneavdelingen., Norway","Micaela Thierley, Helse Bergen, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Richard Townley-O'Neill, NEHTA, Australia","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Dmitri Wall, Irish Skin Foundation, Ireland">
 	details = <
 		["de"] = <
@@ -147,6 +155,13 @@ If this archetype is used within other archetypes where the specified subject of
 			copyright = <"© openEHR Foundation">
 			misuse = <"لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن">
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"Om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen, in macroscopische anatomische termen.">
+			keywords = <"locatie","structuur","anatomisch","anatomische regio","topografische anatomie","macroscopisch">
+			use = <"Gebruik om gestructureerde details over een structuur op of in het menselijk lichaam te identificeren en vast te leggen.">
+			misuse = <"Niet gebruiken om meerdere unilaterale/bilaterale structuren vast te leggen.">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
@@ -156,9 +171,9 @@ If this archetype is used within other archetypes where the specified subject of
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ED4D12B1642C61217E416A8C11EE848B">
-		["build_uid"] = <"889aee9e-a434-4dfc-860e-8811adfc48ae">
-		["revision"] = <"1.2.0">
+		["MD5-CAM-1.0.1"] = <"5A9429074977A06C119425A2D2F2008B">
+		["build_uid"] = <"8889f74d-e334-4dc1-b258-043579f65bb6">
+		["revision"] = <"1.2.1-alpha">
 	>
 
 definition
@@ -1154,6 +1169,146 @@ Wenn der Name der Körperstelle bereits im übergeordneten Archetyp angegeben is
 				["at0082"] = <
 					text = <"Dorsal">
 					description = <"In Richtung des Handrückens oder des Fußrückens hin gelegen. Als Gegenstück zu Palmar oder Plantar, nicht als Synonym für posterior.">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Anatomische locatie">
+					description = <"Een fysieke regio op of in het menselijk lichaam.">
+				>
+				["at0001"] = <
+					text = <"Lichaamslocatie">
+					description = <"Identificatie van een enkele fysieke regio op of in het menselijk lichaam.">
+				>
+				["at0002"] = <
+					text = <"Lateraliteit">
+					description = <"De zijde van het lichaam waarop de geïdentificeerde Lichaamslocatie zich bevindt.">
+				>
+				["at0003"] = <
+					text = <"Links">
+					description = <"Linkerzijde van het lichaam.">
+				>
+				["at0004"] = <
+					text = <"Rechts">
+					description = <"Rechterzijde van het lichaam.">
+				>
+				["at0023"] = <
+					text = <"Beschrijving">
+					description = <"Verhalende beschrijving die kan worden gebruikt om de 'Lichaamslocatie' verder te verfijnen en te ondersteunen.">
+				>
+				["at0053"] = <
+					text = <"Alternatieve structuur">
+					description = <"Extra details over de anatomische regio met alternatieve benaderingen om dezelfde lichaamslocatie te beschrijven.">
+				>
+				["at0054"] = <
+					text = <"Multimedia representatie">
+					description = <"Afbeelding of andere media die worden gebruikt om identificatie van de lichaamslocatie te ondersteunen.">
+				>
+				["at0055"] = <
+					text = <"Anatomische lijn">
+					description = <"Extra details met behulp van theoretische lijnen getrokken door anatomische structuren die worden gebruikt om een ​​consistent referentiepunt op het menselijk lichaam te bieden.">
+				>
+				["at0056"] = <
+					text = <"Midaxillaire lijn">
+					description = <"Lijn die verticaal langs het oppervlak van het lichaam loopt en door de top van de oksel loopt.">
+				>
+				["at0057"] = <
+					text = <"Anterior axillaire lijn">
+					description = <"Lijn die verticaal langs het oppervlak van het lichaam loopt en door de voorste axillaire huidplooi gaat.">
+				>
+				["at0058"] = <
+					text = <"Posterior axillaire lijn">
+					description = <"Lijn die verticaal langs het oppervlak van het lichaam loopt en door de achterste axillaire huidplooi gaat.">
+				>
+				["at0059"] = <
+					text = <"Mid-claviculaire lijn">
+					description = <"Lijn die verticaal langs het lichaamsoppervlak loopt, evenwijdig aan de middellijn en door het middelpunt van het sleutelbeen.">
+				>
+				["at0060"] = <
+					text = <"Mid-pupillaire lijn">
+					description = <"Lijn die verticaal over het gezicht loopt door het middelpunt van de pupil als je recht naar voren kijkt.">
+				>
+				["at0062"] = <
+					text = <"Middenlijn">
+					description = <"Lijn die verticaal loopt en het lichaam in linker en rechter delen verdeelt, die door het hoofd, het ruggenmerg en de navel loopt. Als alternatief kan het verwijzen naar een lijn die een lichaamsdeel in twee gelijke delen verdeelt.">
+				>
+				["at0063"] = <
+					text = <"Mid-scapulaire lijn">
+					description = <"Lijn die verticaal langs het achterste oppervlak van het lichaam loopt, evenwijdig aan de middellijn en door het onderste punt van het schouderblad gaat.">
+				>
+				["at0064"] = <
+					text = <"Aspect">
+					description = <"Kwalificerend detail over het specifieke aspect van de geïdentificeerde lichaamslocatie.">
+				>
+				["at0065"] = <
+					text = <"Specifieke locatie">
+					description = <"Extra details met behulp van een specifieke regio of een punt op of binnen de geïdentificeerde lichaamslocatie.">
+				>
+				["at0067"] = <
+					text = <"Mediaal">
+					description = <"Naar de middellijn van de lichaamslocatie.">
+				>
+				["at0068"] = <
+					text = <"Lateraal">
+					description = <"Naar de zijkant of rand van de lichaamslocatie.">
+				>
+				["at0069"] = <
+					text = <"Superior">
+					description = <"Boven de lichaamslocatie, ookwel richting het hoofd.">
+				>
+				["at0070"] = <
+					text = <"Inferior">
+					description = <"Onder de lichaamslocatie, ook wel richting de voeten.">
+				>
+				["at0071"] = <
+					text = <"Anterior">
+					description = <"Naar de voorkant of het ventrale oppervlak van de lichaamslocatie.">
+				>
+				["at0072"] = <
+					text = <"Posterior">
+					description = <"Naar de achterkant of het dorsale oppervlak van de lichaamslocatie.">
+				>
+				["at0073"] = <
+					text = <"Proximaal">
+					description = <"Centraler of dichter bij het centrum van het lichaam, meestal gebruikt in de context van een ledenmaat, vinger of aanhangsel.">
+				>
+				["at0074"] = <
+					text = <"Distaal">
+					description = <"Verder weg van het centrum van het lichaam, meestal gebruikt in de context van een ledenmaat, vinger of aanhangsel.">
+				>
+				["at0075"] = <
+					text = <"Palmair">
+					description = <"Naar de palm van de hand.">
+				>
+				["at0076"] = <
+					text = <"Plantair">
+					description = <"Naar de voetzool.">
+				>
+				["at0077"] = <
+					text = <"Midden">
+					description = <"In het midden van de lichaamslocatie.">
+				>
+				["at0078"] = <
+					text = <"Oraal">
+					description = <"Naar de mond toe, meestal gebruikt in de context van het spijsverteringssysteem.">
+				>
+				["at0079"] = <
+					text = <"Anaal">
+					description = <"Naar de anus toe, meestal gebruikt in de context van het spijsverteringssysteem.">
+				>
+				["at0080"] = <
+					text = <"Diep">
+					description = <"Dieper onder de oppervlakte van de lichaamslocatie.">
+				>
+				["at0081"] = <
+					text = <"Oppervlakkig">
+					description = <"Naar de oppervlakte toe van de lichaamslocatie.">
+				>
+				["at0082"] = <
+					text = <"Dorsaal">
+					description = <"Naar de rug van de hand of de voet. Gebruik als tegenovergestelde van palmair of plantair, en niet als synoniem voor posterior.">
 				>
 			>
 		>
