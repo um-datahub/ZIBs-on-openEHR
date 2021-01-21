@@ -28,5 +28,4 @@ tags: [location, anatomical, anatomic region, topographic anatomy, macroscopic, 
 
 ## Lateraliteit
 
-Discussie over lateraliteit in openEHR-Discourse
 Discussie over lateraliteit in openEHR-Discourse waarbij wordt voorgesteld terug te keren naar de eerder gepubliceerde versie, zonder het 'Rechts en links' lateraliteitswaarde - zie [https://discourse.openehr.org/t/anatomical-location/677](https://discourse.openehr.org/t/anatomical-location/677).
