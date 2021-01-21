@@ -1,7 +1,7 @@
 ---
 layout: zib
 parent: Mappings
-title: AnatomischeLocatie
+title: Anatomische locatie
 version: 0.1
 zib:
     name: AnatomischeLocatie-v1.0
@@ -13,14 +13,20 @@ openEHR:
         - openEHR-EHR-CLUSTER.anatomical_location.v1
     ckm: 
 status:
-    mapping: Inrichten
+    mapping: Ontwikkelen
     template: Ontwikkelen
-    vertaling: Inrichten
+    vertaling: Ontwikkelen
     codelijst: Inrichten
     globaal: Ontwikkelen
-date: 2020-11-12T
+date: 2021-01-21T
 authors: 
-    - Sebastian Iancu (Code24)
-categories: [BgZ, Subbouwstenen]
-tags: [location, anatomical, anatomic region, topographic anatomy, macroscopic, anatomic, anatomy]
+    - Joost Holslag (Nedap)
+    - Sebastian Iancu (Code24) 
+categories: [Subbouwstenen]
+tags: [location, anatomical, anatomic region, topographic anatomy, macroscopic, anatomic, anatomy, locatie, structuur, anatomisch, anatomische regio, topografische anatomie, macroscopisch]
 ---
+
+## Lateraliteit
+
+Discussie over lateraliteit in openEHR-Discourse
+Discussie over lateraliteit in openEHR-Discourse waarbij wordt voorgesteld terug te keren naar de eerder gepubliceerde versie, zonder het 'Rechts en links' lateraliteitswaarde - zie [https://discourse.openehr.org/t/anatomical-location/677](https://discourse.openehr.org/t/anatomical-location/677).
