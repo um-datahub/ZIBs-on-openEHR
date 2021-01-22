@@ -12,6 +12,7 @@ openEHR:
     archetypes: 
         - openEHR-EHR-OBSERVATION.body_weight.v2
     ckm: 
+        - https://ckm.openehr.org/ckm/archetypes/1013.1.2960
 status:
     mapping: Concept
     template: Concept
