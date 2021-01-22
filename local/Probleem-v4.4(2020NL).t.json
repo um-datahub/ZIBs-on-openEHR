@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "de854390cdcb88d658d13fb80ef61a6c",
+      "MD5-CAM-1.0.1" : "125ee34946b3f95f7a6c233431f898d9",
       "PARENT:MD5-CAM-1.0.1" : "4BF04E7D09B866397CA12BAFED2BC216"
     },
     "details" : {
@@ -303,19 +303,15 @@
                   "rmAttributeName" : "defining_code",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "CODE_PHRASE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "1..1",
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "at0074", "at0075", "at0076" ]
+                    "constraint" : [ "ac0.2" ],
+                    "selectedTerminologies" : [ ]
                   } ]
                 } ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_TEXT",
-                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -400,6 +396,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "es-ar" : {
@@ -415,6 +417,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "de" : {
@@ -429,6 +437,12 @@
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
           "description" : ""
         }
       },
@@ -465,6 +479,12 @@
           "code" : "at0073.1",
           "text" : "*Diagnostic certainty(en)",
           "description" : "The level of confidence in the identification of the diagnosis."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "ar-sy" : {
@@ -479,6 +499,12 @@
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
           "description" : ""
         }
       },
@@ -495,6 +521,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "nb" : {
@@ -509,6 +541,12 @@
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
           "description" : ""
         }
       },
@@ -525,6 +563,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "ko" : {
@@ -539,6 +583,12 @@
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
           "description" : ""
         }
       },
@@ -555,6 +605,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       },
       "it" : {
@@ -569,6 +625,12 @@
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
           "description" : ""
         }
       },
@@ -599,6 +661,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       }
     },
@@ -609,6 +677,11 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.1",
         "members" : [ "at0047", "at0048", "at0049" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
+        "members" : [ "at0074", "at0075", "at0076" ]
       }
     }
   },
