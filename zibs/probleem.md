@@ -13,12 +13,12 @@ openEHR:
         - openEHR-EHR-EVALUATION.problem_diagnosis.v1
     ckm: 
 status:
-    mapping: Inrichten
+    mapping: Ontwikkelen
     template: Ontwikkelen
     vertaling: Inrichten
     codelijst: Inrichten
     globaal: Ontwikkelen
-date: 2020-11-12T
+date: 2021-01-22T
 authors: 
     - Sebastian Iancu (Code24)
 categories: [BgZ, Klinische context]
