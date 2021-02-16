@@ -4,7 +4,7 @@ parent: Mappings
 title: Lichaamsgewicht
 version: 0.1
 zib:
-    name: Lichaamsgewicht-v3.2(2020NL)
+    name: Lichaamsgewicht-v3.2
     url: https://zibs.nl/wiki/Lichaamsgewicht-v3.2(2020NL)
 openEHR:
     templates: 

@@ -3,7 +3,7 @@ layout: zib
 parent: Mappings
 title: Hartfrequentie
 zib:
-    name: Bloeddruk-v3.4
+    name: Hartfrequentie-v3.4
     url: https://zibs.nl/wiki/Bloeddruk-v3.2.1(2020NL)
 openEHR:
     templates: 
