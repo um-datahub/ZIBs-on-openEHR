@@ -13,9 +13,9 @@ openEHR:
         - openEHR-EHR-OBSERVATION.pulse.v2
     ckm: 
 status:
-    mapping: Ontwikkelen
+    mapping: Concept
     template: Concept
-    vertaling: Ontwikkelen
+    vertaling: Concept
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
 date: 2020-02-12T

@@ -13,8 +13,8 @@ openEHR:
         - openEHR-EHR-OBSERVATION.pulse.v2
     ckm: 
 status:
-    mapping: Ontwikkelen
-    template: Ontwikkelen
+    mapping: Concept
+    template: Concept
     vertaling: Concept
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
