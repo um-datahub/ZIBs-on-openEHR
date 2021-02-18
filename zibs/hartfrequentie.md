@@ -2,9 +2,10 @@
 layout: zib
 parent: Mappings
 title: Hartfrequentie
+version: 0.1
 zib:
     name: Hartfrequentie-v3.4
-    url: https://zibs.nl/wiki/Bloeddruk-v3.2.1(2020NL)
+    url: https://zibs.nl/wiki/Hartfrequentie-v3.4(2020NL)
 openEHR:
     templates: 
         - Hartfrequentie-v3.4(2020NL) 
@@ -17,14 +18,11 @@ status:
     vertaling: Concept
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
-date: 2021-01-22T
+date: 2021-02-16T
 authors: 
-    - Jelte Zeilstra (Nedap) 
-    - Joost Holslag (Nedap)
-    - Sebastian Iancu (Code24) 
     - Wouter Zanen (EuroTransplant) 
 categories: [BgZ, Metingen]
-tags: [metingen, heartfrequentyie, vital_signs]
+tags: [metingen, hartfrequentie, vitale parameters, hartslag, vital_signs]
 ---
 
 

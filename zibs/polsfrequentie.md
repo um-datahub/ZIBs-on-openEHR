@@ -2,7 +2,7 @@
 layout: zib
 parent: Mappings
 title: Polsfrequentie
-version: 0.2
+version: 0.1
 zib:
     name: Polsfrequentie-v3.3
     url: https://zibs.nl/wiki/Polsfrequentie-v3.3(2020NL)
@@ -18,14 +18,11 @@ status:
     vertaling: Ontwikkelen
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
-date: 2020-01-22T
+date: 2020-02-12T
 authors: 
-    - Jelte Zeilstra (Nedap) 
-    - Joost Holslag (Nedap)
-    - Sebastian Iancu (Code24) 
     - Wouter Zanen (EuroTransplant) 
 categories: [BgZ, Metingen]
-tags: [metingen, pols, vital_signs]
+tags: [metingen, pols, polsfrequentie, polsslag, pulsus, vital_signs]
 ---
 
 
