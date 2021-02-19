@@ -18,7 +18,7 @@ status:
     vertaling: Ontwikkelen
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
-date: 2020-02-12T
+date: 2021-02-12T
 authors: 
     - Wouter Zanen (EuroTransplant) 
 categories: [BgZ, Metingen]
