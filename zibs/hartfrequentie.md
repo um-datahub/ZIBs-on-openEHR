@@ -3,15 +3,12 @@ layout: zib
 parent: Mappings
 title: Hartfrequentie
 version: 0.1
-zib:
-    name: Hartfrequentie-v3.4
-    url: https://zibs.nl/wiki/Hartfrequentie-v3.4(2020NL)
+zib: Hartfrequentie-v3.4
 openEHR:
     templates: 
         - Hartfrequentie-v3.4(2020NL) 
     archetypes: 
         - openEHR-EHR-OBSERVATION.pulse.v2
-    ckm: 
 status:
     mapping: Concept
     template: Concept

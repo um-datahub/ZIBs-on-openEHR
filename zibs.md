@@ -143,12 +143,12 @@ Hieronder een overzicht van alle gedefineerde zibs en ook degene die al in ontwi
     {% tablerow zib in zibs cols:3 %}
         {% assign found = false %}
         {% for mappingPage in mappingsPages %}
-            {% if mappingPage.zib.name == zib %}
+            {% if mappingPage.zib == zib %}
                 {% assign found = mappingPage %}
             {% endif %}
         {% endfor %}
         {% if found %}
-            <a href="{{ found.url }}">{{ found.zib.name }}</a>{% include status.html status=found.status.globaal %}
+            <a href="{{ found.url }}">{{ found.zib }}</a>{% include status.html status=found.status.globaal %}
         {% else %}
             {{ zib }} 
         {% endif %}

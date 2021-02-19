@@ -3,15 +3,12 @@ layout: zib
 parent: Mappings
 title: Anatomische locatie
 version: 0.1
-zib:
-    name: AnatomischeLocatie-v1.0
-    url: https://zibs.nl/wiki/AnatomischeLocatie-v1.0(2020NL)
+zib: AnatomischeLocatie-v1.0
 openEHR:
     templates: 
         - AnatomischeLocatie-v1.0(2020NL)
     archetypes: 
         - openEHR-EHR-CLUSTER.anatomical_location.v1
-    ckm: 
 status:
     mapping: Ontwikkelen
     template: Ontwikkelen
