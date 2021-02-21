@@ -133,7 +133,7 @@ Meer informatie zijn beschikbaar bij de ['Registratie aan de bron'](https://www.
 Om de mapping te realiseren, gebruiken we de huidige [publicatie 2020(NL)](https://zibs.nl/wiki/ZIB_Publicatie_2020(NL)).
 Hieronder een overzicht van alle gedefineerde zibs en ook degene die al in ontwikkeling zijn:
 
-{% assign mappingsPages = site.pages | where: 'parent', 'Mappings' %}
+{% assign mappingsPages = site.html_pages | where: 'parent', 'Mappings' %}
 
 {% for categoryInfo in page.data %}
 {% assign category=categoryInfo[0] %}
@@ -141,14 +141,9 @@ Hieronder een overzicht van alle gedefineerde zibs en ook degene die al in ontwi
 ### groep: {{ category }}, aantal: {{ zibs | size }} 
 <table>
     {% tablerow zib in zibs cols:3 %}
-        {% assign found = false %}
-        {% for mappingPage in mappingsPages %}
-            {% if mappingPage.zib == zib %}
-                {% assign found = mappingPage %}
-            {% endif %}
-        {% endfor %}
-        {% if found %}
-            <a href="{{ found.url }}">{{ found.zib }}</a>{% include status.html status=found.status.globaal %}
+        {% assign zibMapping = mappingsPages | where: "zib", zib | first %}
+        {% if zibMapping %}
+            <a href="{{ zibMapping.url }}">{{ zibMapping.zib }}</a>{% include status.html status=zibMapping.status.globaal %}
         {% else %}
             {{ zib }} 
         {% endif %}
