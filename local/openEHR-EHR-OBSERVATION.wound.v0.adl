@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4c7fb5cfb7d27c445aca74eb8a03d685">
+		["MD5-CAM-1.0.1"] = <"66d72a8b3606d4fae0eb86dccb8b9b36">
 		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
 	>
 
@@ -80,6 +80,16 @@ definition
 									allow_archetype ELEMENT[at0014] occurrences matches {0..*} matches {    -- Drain
 										include
 											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0015] occurrences matches {0..*} matches {    -- Multimedia
+										value matches {
+											DV_MULTIMEDIA matches {*}
+										}
+									}
+									ELEMENT[at0016] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
 									}
 								}
 							}
@@ -152,6 +162,14 @@ ontology
 				["at0014"] = <
 					text = <"Drain">
 					description = <"">
+				>
+				["at0015"] = <
+					text = <"Multimedia">
+					description = <"A photo or other multimedia of the wound.">
+				>
+				["at0016"] = <
+					text = <"Comment">
+					description = <"Comment on the wound.">
 				>
 			>
 		>
