@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2021-03-12">
+		["name"] = <"Stichting openEHR Nederland">
 		["organisation"] = <"openEHR-NL">
 		["email"] = <"info@openehr.nl">
-		["name"] = <"Stichting openEHR Nederland">
-		["date"] = <"2021-03-12">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3960af9725798ede0d8037941220cb2c">
+		["MD5-CAM-1.0.1"] = <"2d2c08ed6ac1681d6794dc55453c03c4">
 		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
 	>
 
@@ -43,6 +43,10 @@ definition
 										value matches {
 											DV_CODED_TEXT matches {*}
 										}
+									}
+									allow_archetype ELEMENT[at0006] occurrences matches {0..*} matches {    -- Classification
+										include
+											archetype_id/value matches {/.*/}
 									}
 								}
 							}
@@ -83,6 +87,10 @@ ontology
 				["at0005"] = <
 					text = <"Type">
 					description = <"Description of the type of wound">
+				>
+				["at0006"] = <
+					text = <"Classification">
+					description = <"">
 				>
 			>
 		>
