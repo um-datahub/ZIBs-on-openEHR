@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d43c26cbdbcc2df0bb4b4ef6cd177d6a">
+		["MD5-CAM-1.0.1"] = <"3960af9725798ede0d8037941220cb2c">
 		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
 	>
 
@@ -43,30 +43,6 @@ definition
 										value matches {
 											DV_CODED_TEXT matches {*}
 										}
-									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Tissue
-										value matches {
-											DV_CODED_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Infection
-										value matches {
-											DV_CODED_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Moisture
-										value matches {
-											DV_CODED_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Edge
-										value matches {
-											DV_CODED_TEXT matches {*}
-										}
-									}
-									allow_archetype ELEMENT[at0010] occurrences matches {0..*} matches {    -- Time model
-										include
-											archetype_id/value matches {/.*/}
 									}
 								}
 							}
@@ -107,26 +83,6 @@ ontology
 				["at0005"] = <
 					text = <"Type">
 					description = <"Description of the type of wound">
-				>
-				["at0006"] = <
-					text = <"Tissue">
-					description = <"Description of the tissue of the wound. For this, the WCS model can be used. A different classification is used for oncological ulcers.">
-				>
-				["at0007"] = <
-					text = <"Infection">
-					description = <"Indication stating whether the wound is infected.">
-				>
-				["at0008"] = <
-					text = <"Moisture">
-					description = <"Description of the moisture in the wound.">
-				>
-				["at0009"] = <
-					text = <"Edge">
-					description = <"Description of the condition of the outer edges of the wound.">
-				>
-				["at0010"] = <
-					text = <"Time model">
-					description = <"A commonly used model for documenting the wound properties is the TIME (‘Tissue’, ‘Infection’, ‘Moisture’, ‘Edge’) model, which can be used to systematically describe the wound. For wound tissue (T in the TIME model), the structure of the WCS model (Woundcare Consultant Society, WCS Kenniscentrum Wondzorg) is used. The WCS model is not suited for describing oncological ulcers. There is a separate classification for that.">
 				>
 			>
 		>
