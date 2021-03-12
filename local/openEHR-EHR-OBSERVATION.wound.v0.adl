@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a9aec96732c9aa0deacf8613c444e1d1">
+		["MD5-CAM-1.0.1"] = <"4c7fb5cfb7d27c445aca74eb8a03d685">
 		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
 	>
 
@@ -71,6 +71,15 @@ definition
 										value matches {
 											DV_DATE_TIME matches {*}
 										}
+									}
+									ELEMENT[at0012] occurrences matches {0..1} matches {    -- Date of last dressing change
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
+									}
+									allow_archetype ELEMENT[at0014] occurrences matches {0..*} matches {    -- Drain
+										include
+											archetype_id/value matches {/.*/}
 									}
 								}
 							}
@@ -135,6 +144,14 @@ ontology
 				["at0011"] = <
 					text = <"Date of onset">
 					description = <"The date on which the wound appeared.">
+				>
+				["at0012"] = <
+					text = <"Date of last dressing change">
+					description = <"Date on which the dressing was last changed.">
+				>
+				["at0014"] = <
+					text = <"Drain">
+					description = <"">
 				>
 			>
 		>
