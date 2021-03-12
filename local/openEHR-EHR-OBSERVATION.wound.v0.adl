@@ -1,0 +1,133 @@
+archetype (adl_version=1.4; uid=fbad64df-3d6b-446d-ad85-a39a24287165)
+	openEHR-EHR-OBSERVATION.wound.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["organisation"] = <"openEHR-NL">
+		["email"] = <"info@openehr.nl">
+		["name"] = <"Stichting openEHR Nederland">
+		["date"] = <"2021-03-12">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d43c26cbdbcc2df0bb4b4ef6cd177d6a">
+		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Wound
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {0..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0005] matches {    -- Type
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Tissue
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Infection
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Moisture
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Edge
+										value matches {
+											DV_CODED_TEXT matches {*}
+										}
+									}
+									allow_archetype ELEMENT[at0010] occurrences matches {0..*} matches {    -- Time model
+										include
+											archetype_id/value matches {/.*/}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0004] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Wound">
+					description = <"Wound">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Type">
+					description = <"Description of the type of wound">
+				>
+				["at0006"] = <
+					text = <"Tissue">
+					description = <"Description of the tissue of the wound. For this, the WCS model can be used. A different classification is used for oncological ulcers.">
+				>
+				["at0007"] = <
+					text = <"Infection">
+					description = <"Indication stating whether the wound is infected.">
+				>
+				["at0008"] = <
+					text = <"Moisture">
+					description = <"Description of the moisture in the wound.">
+				>
+				["at0009"] = <
+					text = <"Edge">
+					description = <"Description of the condition of the outer edges of the wound.">
+				>
+				["at0010"] = <
+					text = <"Time model">
+					description = <"A commonly used model for documenting the wound properties is the TIME (‘Tissue’, ‘Infection’, ‘Moisture’, ‘Edge’) model, which can be used to systematically describe the wound. For wound tissue (T in the TIME model), the structure of the WCS model (Woundcare Consultant Society, WCS Kenniscentrum Wondzorg) is used. The WCS model is not suited for describing oncological ulcers. There is a separate classification for that.">
+				>
+			>
+		>
+	>
