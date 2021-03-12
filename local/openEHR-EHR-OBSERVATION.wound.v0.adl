@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2d2c08ed6ac1681d6794dc55453c03c4">
+		["MD5-CAM-1.0.1"] = <"a9aec96732c9aa0deacf8613c444e1d1">
 		["build_uid"] = <"1e5ba840-ff27-3625-baba-a29ea74f4f5f">
 	>
 
@@ -47,6 +47,30 @@ definition
 									allow_archetype ELEMENT[at0006] occurrences matches {0..*} matches {    -- Classification
 										include
 											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Length
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0008] occurrences matches {0..1} matches {    -- Width
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Depth
+										value matches {
+											DV_QUANTITY matches {*}
+										}
+									}
+									allow_archetype ELEMENT[at0010] occurrences matches {0..*} matches {    -- Anatomical location
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Date of onset
+										value matches {
+											DV_DATE_TIME matches {*}
+										}
 									}
 								}
 							}
@@ -91,6 +115,26 @@ ontology
 				["at0006"] = <
 					text = <"Classification">
 					description = <"">
+				>
+				["at0007"] = <
+					text = <"Length">
+					description = <"The length of the wound.">
+				>
+				["at0008"] = <
+					text = <"Width">
+					description = <"The width of the wound.">
+				>
+				["at0009"] = <
+					text = <"Depth">
+					description = <"The depth of the wound.">
+				>
+				["at0010"] = <
+					text = <"Anatomical location">
+					description = <"The location of the wound on the body.">
+				>
+				["at0011"] = <
+					text = <"Date of onset">
+					description = <"The date on which the wound appeared.">
 				>
 			>
 		>
