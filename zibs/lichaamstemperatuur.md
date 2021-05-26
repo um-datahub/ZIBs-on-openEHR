@@ -15,9 +15,10 @@ status:
     vertaling: Ontwikkelen
     codelijst: Ontwikkelen
     globaal: Ontwikkelen
-date: 2021-02-22T
+date: 2021-05-26T
 authors:  
     - Wouter Zanen (EuroTransplant) 
+    - Jelte Zeilstra (Nedap)
 categories: [BgZ, Metingen]
 tags: [metingen, lichaamstemperatuur, observatie]
 ---
