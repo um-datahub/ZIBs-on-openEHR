@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -35,6 +42,10 @@ The definitions of the concepts were (partially) taken from the ICNP definitions
 In addition to this information model, there are other tools to record independence, such as the KATZ-ADL and the BarthelIndex. The KATZ-ADL is mainly used for vulnerable seniors and the BarthelIndex is mainly used for patients who have had a stroke.
 This information model evaluates the ability to get dressed on a three-point scale. In the KATZ-ADL and in the BarthelIndex, this falls under the aspect of Dressing. In these two tools, the ability is scored on a scale with fewer points.">
 		>
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			copyright = <"© openEHR Foundation">
+		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
@@ -44,7 +55,7 @@ This information model evaluates the ability to get dressed on a three-point sca
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"81DF3F35008B78D75FD7609595FC4C07">
+		["MD5-CAM-1.0.1"] = <"a526887e7203d0df814bb37b0c343c9d">
 		["build_uid"] = <"053c0bf7-5f40-4627-b8db-c145f43a8903">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -145,6 +156,59 @@ ontology
 				["at0011"] = <
 					text = <"Lower body">
 					description = <"The individual requires assistance with dressing the lower body.">
+				>
+			>
+		>
+		["nl"] = <
+			items = <
+				["at0000"] = <
+					text = <"Vermogen tot zich kleden">
+					description = <"*The ability of an individual to put on and remove clothing. (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (en)">
+					description = <"*Any event. (en)">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Zich kleden">
+					description = <"Aan- en uittrekken van (passende) kleding.">
+					comment = <"In het concept TeKledenLichaamsdeel kan nader aangegeven worden voor welk lichaamsdeel de beperking geldt.">
+				>
+				["at0005"] = <
+					text = <"Te kleden lichaamsdeel">
+					description = <"Het lichaamsdeel of de lichaamsdelen waarvoor ondersteuning bij het zich kleden gewenst/noodzakelijk is.">
+				>
+				["at0006"] = <
+					text = <"*Independent (en)">
+					description = <"*The individual has the ability to put on and remove clothing independently. (en)">
+				>
+				["at0007"] = <
+					text = <"*Requires assistance (en)">
+					description = <"*The individual requires assistance with putting on and removing clothing. (en)">
+				>
+				["at0008"] = <
+					text = <"*Unable to dress (en)">
+					description = <"*The individual is unable to put on and remove clothing. (en)">
+				>
+				["at0009"] = <
+					text = <"*Entire body (en)">
+					description = <"*The individual requires assistance with dressing the whole body. (en)">
+				>
+				["at0010"] = <
+					text = <"*Upper body (en)">
+					description = <"*The individual requires assistance with dressing the upper body. (en)">
+				>
+				["at0011"] = <
+					text = <"*Lower body (en)">
+					description = <"*The individual requires assistance with dressing the lower body. (en)">
 				>
 			>
 		>
