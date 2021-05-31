@@ -10,6 +10,9 @@ language
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			author = <
+				["name"] = <"Wouter Zanen">
+				["email"] = <"w.zanen@eurotransplant.org">
+				["organisation"] = <"Eurotransplant">
 			>
 		>
 	>
@@ -44,6 +47,8 @@ This information model evaluates the ability to get dressed on a three-point sca
 		>
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
+			purpose = <"Informatie over beperkingen in het vermogen om zich zelfstandig te kunnen kleden is van belang bij het bepalen van de aard en intensiteit van de zorg die aan de patiënt geboden moet worden. In een overdrachtsituatie biedt het de ontvangende organisatie de mogelijkheid te anticiperen op de zwaarte van de te leveren zorg waardoor continuïteit van de zorgverlening gerealiseerd kan worden.
+Indien beleid is ingezet om de zelfredzaamheid te verbeteren, biedt de vastgelegde mate van zelfstandigheid de mogelijkheid de doeltreffendheid van de behandeling vast te stellen.">
 			copyright = <"© openEHR Foundation">
 		>
 	>
@@ -55,7 +60,7 @@ This information model evaluates the ability to get dressed on a three-point sca
 		["original_namespace"] = <"uk.org.clinicalmodels">
 		["original_publisher"] = <"Apperta UK">
 		["custodian_namespace"] = <"uk.org.clinicalmodels">
-		["MD5-CAM-1.0.1"] = <"a526887e7203d0df814bb37b0c343c9d">
+		["MD5-CAM-1.0.1"] = <"80d7781143e1caa122f8bc7406430bea">
 		["build_uid"] = <"053c0bf7-5f40-4627-b8db-c145f43a8903">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -100,6 +105,9 @@ definition
 					}
 				}
 			}
+		}
+		protocol matches {
+			ITEM_TREE[at0012] matches {*}    -- Item tree
 		}
 	}
 
@@ -157,20 +165,24 @@ ontology
 					text = <"Lower body">
 					description = <"The individual requires assistance with dressing the lower body.">
 				>
+				["at0012"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
 			>
 		>
 		["nl"] = <
 			items = <
 				["at0000"] = <
 					text = <"Vermogen tot zich kleden">
-					description = <"*The ability of an individual to put on and remove clothing. (en)">
+					description = <"Het vermogen om kleding aan en uit te trekken">
 				>
 				["at0001"] = <
 					text = <"History">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Any event (en)">
+					text = <"Elke gebeurtenis">
 					description = <"*Any event. (en)">
 				>
 				["at0003"] = <
@@ -209,6 +221,10 @@ ontology
 				["at0011"] = <
 					text = <"*Lower body (en)">
 					description = <"*The individual requires assistance with dressing the lower body. (en)">
+				>
+				["at0012"] = <
+					text = <"*Item tree (en)">
+					description = <"@ internal @">
 				>
 			>
 		>
