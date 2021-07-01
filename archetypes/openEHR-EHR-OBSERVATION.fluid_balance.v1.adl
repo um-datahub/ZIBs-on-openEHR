@@ -1,9 +1,8 @@
-archetype (adl_version=1.4; uid=3b738daa-034d-49b2-ba40-55b8d169778a)
+﻿archetype (adl_version=1.4; uid=3b738daa-034d-49b2-ba40-55b8d169778a)
 	openEHR-EHR-OBSERVATION.fluid_balance.v1
 
 concept
-	[at0000]
-
+	[at0000]	-- Fluid balance
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -48,38 +47,24 @@ language
 			>
 		>
 	>
-
 description
 	original_author = <
-		["date"] = <"2013-02-22">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Ocean Informatics">
 		["email"] = <"heather.leslie@oceaninformatics.com">
+		["date"] = <"2013-02-22">
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Tomas Alme, DIPS, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Marcus Baw, openGPSoC / BawMedical Ltd, United Kingdom","Ingeborg Berge, Direktoratet for e-helse, Norway","Kristian Berg, Vestvågøy kommune - Fagutviklingsavdelingen, Norway","SB Bhattacharyya, Sudisa Consultancy Services, India","Bjørn Christensen, Helse Bergen HF, Norway","Stig Erik Hegrestad, Helse Førde, Norway","Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom","Mikkel Gaup Grønmo, FSE, Helse Nord, Norway","Heather Grain, Llewelyn Grain Informatics, Australia","Cecilie Graver, Oslo universitetssykehus HF, Norway","Ingrid Heitmann, Oslo universitetssykehus HF, Norway","Annette Hole Sjøborg, DIPS ASA, Norway","Hilde Hollås, DIPS ASA, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Lars Ivar Mehlum, Helse Bergen HF, Norway","Tom Jarl Jakobsen, Helse Bergen, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Harmony Kosola, Alberta Health Services, Canada","Anne Kristin Strand, Sykehuspartner HF, Norway","Heather Leslie, Ocean Health Systems, Australia","Marit Ludvigsen, St Olavs Hospital, Norway","Hallvard Lærum, Direktoratet for e-helse, Norway","Siv Marie Lien, DIPS ASA, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom","Andrej Orel, Marand d.o.o., Slovenia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Vladimir Pizzo, Hospital Sírio Libanês, Brazil","Navin Ramachandran, NHS, United Kingdom","Tanja Riise, Nasjonal IKT HF, Norway","Anoop Shah, University College London, United Kingdom","Line Silsand, Universitetssykehuset i Nord-Norge, Norway","Iztok Stotl, UKCLJ, Slovenia","Roy Støle, OUS, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","Tesfay Teame, Folkehelseinstittutet, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway","John Tore Valand, Helse Bergen, Norway (openEHR Editor)">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Darstellung der kumulierten oder Gesamtmenge der Flüssigkeitszufuhr und -ausscheidung sowie einer Schätzung des Flüssigkeitshaushaltsstatus einer Person über bestimmte Zeiträume.
 
 Zur Darstellung der Schätzung der Differenz zwischen Flüssigkeitszufuhr und -ausscheidung während eines bestimmten Zeitraums.">
-			keywords = <"Flüssigkeit","Haushalt","Gleichgewicht","Zufuhr","Ausscheidung","Verlust","Schweiß","unmerklich","insensibel","Verdunstung","Schwitzen">
 			use = <"Wird verwendet, um kumulative oder Gesamtmengen an Flüssigkeitszufuhr und -ausscheidung sowie eine Schätzung des Flüssigkeitshaushaltsstatus einer Person über bestimmte Zeiträume darzustellen.
 
 Ein Diagramm über den Flüssigkeitshaushalt erfordert normalerweise eine Kombination mehrerer Instanzen des Archetyps OBSERVATION.fluid_output und des Archetyps OBSERVATION.fluid_input, um alle verschiedenen Ein- und Ausgänge zu erfassen, sowie eine einzelne Instanz des OBSERVATION.fluid_balance, um den gesamten Flüssigkeitsstatus darzustellen.">
+			keywords = <"Flüssigkeit", "Haushalt", "Gleichgewicht", "Zufuhr", "Ausscheidung", "Verlust", "Schweiß", "unmerklich", "insensibel", "Verdunstung", "Schwitzen">
 			misuse = <"Nicht zur Darstellung einzelner Messungen der Flüssigkeitszufuhr oder -ausscheidung verwenden. Verwenden Sie für diese Zwecke die Archetypen OBSERVATION.fluid_input oder OBSERVATION.fluid_output.">
-		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"*To record the cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of an individual over specified intervals of time.
-
-To record the estimation of the difference between fluid input and output during a specified interval of time.(en)">
-			keywords = <"*fluid(en)","*balance(en)","*input(en)","*output(en)","*loss(en)","*sweat(en)","*insensible(en)","*evaporation(en)","*perspiration(en)">
-			use = <"*Use to record cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of a subject over specified periods of time.
-
-A fluid balance chart will typically require a combination of multiple instances of both the OBSERVATION.fluid_output archetype and the OBSERVATION.fluid_input archetype to capture all of the various inputs and outputs, plus a single instance of the OBSERVATION.fluid_balance to record the overall fluid status.(en)">
-			misuse = <"*Not to be used to record individual measurements of fluid input or output. Use the OBSERVATION.fluid_input or OBSERVATION.fluid_output archetypes for these purposes.(en)">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -87,49 +72,62 @@ A fluid balance chart will typically require a combination of multiple instances
 
 Att registrera en uppskattning av skillnaden mellan vätskeintag och vätskeutsöndring under ett angivet tidsintervall.
 ">
-			keywords = <"vätska","balans","intag","utsöndring","förlust","svett","vätskeförlust","avdunstning","transpiration">
 			use = <"Används för att registrera ackumulerade eller totala volymer av vätskeintag och vätskeutsöndring, samt för en statusuppskattning på vätskebalansen för en person under angivna tidsperioder.
 
 Ett vätskebalansdiagram kräver vanligtvis en kombination av flera *fall* av både OBSERVATION.fluid_output arketypen och OBSERVATION.fluid_input arketypen för att fånga alla de olika vätskeintag och utsöndringar, samt ett *fall* av OBSERVATION. fluid_balance för att registrera den totala vätskestatusen.
 ">
+			keywords = <"vätska", "balans", "intag", "utsöndring", "förlust", "svett", "vätskeförlust", "avdunstning", "transpiration">
 			misuse = <"Används inte för att registrera enskilda mätningar av vätskeintag och vätskeutsöndringar. Använd OBSERVATION.fluid_input or OBSERVATION.fluid_output arketyper för dessa ändamål.">
 		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Registrar las cantidades acumuladas o totales de ingreso y egreso de fluido, además de una estimación del estado del balance de fluidos de un individuo durante intervalos de tiempo específicos.
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"*To record the cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of an individual over specified intervals of time.
 
-Registrar la estimación de la diferencia entre el ingreso y egreso de fluido durante un intervalo de tiempo especificado.">
-			keywords = <"fluido","balance","ingreso","egreso","pérdida","sudor","insensible","evaporación","transpiración">
-			use = <"Se usa para registrar cantidades acumuladas o totales de ingreso y egreso de fluido, más una estimación del estado del balance de fluidos de un sujeto durante períodos de tiempo específicos.
+To record the estimation of the difference between fluid input and output during a specified interval of time.(en)">
+			use = <"*Use to record cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of a subject over specified periods of time.
 
-Una tabla de balance de fluidos requerirá una combinación de múltiples instancias del arquetipo OBSERVATION.fluid_output y el arquetipo OBSERVATION.fluid_input para capturar todos los diversos ingreso y egreso, más una única instancia de OBSERVATION.fluid_balance para registrar el estado general del fluido .">
-			misuse = <"No debe usarse para registrar mediciones individuales de ingreso o egreso de fluido. Utilice los arquetipos OBSERVATION.fluid_input u OBSERVATION.fluid_output para estos fines.">
+A fluid balance chart will typically require a combination of multiple instances of both the OBSERVATION.fluid_output archetype and the OBSERVATION.fluid_input archetype to capture all of the various inputs and outputs, plus a single instance of the OBSERVATION.fluid_balance to record the overall fluid status.(en)">
+			keywords = <"*fluid(en)", "*balance(en)", "*input(en)", "*output(en)", "*loss(en)", "*sweat(en)", "*insensible(en)", "*evaporation(en)", "*perspiration(en)">
+			misuse = <"*Not to be used to record individual measurements of fluid input or output. Use the OBSERVATION.fluid_input or OBSERVATION.fluid_output archetypes for these purposes.(en)">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere oppsamlet eller total mengde væskeinntak og væsketap, samt estimat over væskebalansen til et individ i et spesifisert tidsintervall.
 
 For å registrere et estimat over forskjellen mellom væskeinntak og væsketap i et spesifisert tidsintervall.">
-			keywords = <"væske","balanse","væskeinntak","væsketap","tap","inntak","svette","perspiratio","fordamping","drikke","diurese","urin","uttørring","oppkast","diare","væskeregnskap">
-			copyright = <"© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF">
 			use = <"Brukes for å registrere oppsamlet eller total mengde væskeinntak og væsketap, samt estimat over væskebalanse til et individ i et spesifisert tidsintervall.
 
 En væskebalanse vil vanligvis bestå av en kombinasjon av flere instanser av både OBSERVATION.fluid_input (Norsk: Væskeinntak) og OBSERVATION.fluid_output (Norsk: Væsketap) for å fange opp alt av inntak og væsketap, pluss en enkelt instans av OBSERVATION.fluid_balance (denne arketypen) for å registrere den overordnede væskebalansen.">
+			keywords = <"væske", "balanse", "væskeinntak", "væsketap", "tap", "inntak", "svette", "perspiratio", "fordamping", "drikke", "diurese", "urin", "uttørring", "oppkast", "diare", "væskeregnskap">
 			misuse = <"Skal ikke brukes for å registrere enkeltmålinger av væskeinntak eller væsketap. Bruk OBSERVATION.fluid_input (Væskeinntak) eller OBSERVATION.fluid_output (Væsketap) for dette.">
+			copyright = <"© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF">
+		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Registrar las cantidades acumuladas o totales de ingreso y egreso de fluido, además de una estimación del estado del balance de fluidos de un individuo durante intervalos de tiempo específicos.
+
+Registrar la estimación de la diferencia entre el ingreso y egreso de fluido durante un intervalo de tiempo especificado.">
+			use = <"Se usa para registrar cantidades acumuladas o totales de ingreso y egreso de fluido, más una estimación del estado del balance de fluidos de un sujeto durante períodos de tiempo específicos.
+
+Una tabla de balance de fluidos requerirá una combinación de múltiples instancias del arquetipo OBSERVATION.fluid_output y el arquetipo OBSERVATION.fluid_input para capturar todos los diversos ingreso y egreso, más una única instancia de OBSERVATION.fluid_balance para registrar el estado general del fluido .">
+			keywords = <"fluido", "balance", "ingreso", "egreso", "pérdida", "sudor", "insensible", "evaporación", "transpiración">
+			misuse = <"No debe usarse para registrar mediciones individuales de ingreso o egreso de fluido. Utilice los arquetipos OBSERVATION.fluid_input u OBSERVATION.fluid_output para estos fines.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of an individual over specified intervals of time.
 
 To record the estimation of the difference between fluid input and output during a specified interval of time.">
-			keywords = <"fluid","balance","input","output","loss","sweat","insensible","evaporation","perspiration">
-			copyright = <"© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF">
 			use = <"Use to record cumulative or total amounts of fluid input and output, plus an estimation of the fluid balance status of a subject over specified periods of time.
 
 A fluid balance chart will typically require a combination of multiple instances of both the OBSERVATION.fluid_output archetype and the OBSERVATION.fluid_input archetype to capture all of the various inputs and outputs, plus a single instance of the OBSERVATION.fluid_balance to record the overall fluid status.">
+			keywords = <"fluid", "balance", "input", "output", "loss", "sweat", "insensible", "evaporation", "perspiration">
 			misuse = <"Not to be used to record individual measurements of fluid input or output. Use the OBSERVATION.fluid_input or OBSERVATION.fluid_output archetypes for these purposes.">
+			copyright = <"© Australian Digital Health Agency, openEHR Foundation, Nasjonal IKT HF">
 		>
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Tomas Alme, DIPS, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Marcus Baw, openGPSoC / BawMedical Ltd, United Kingdom", "Ingeborg Berge, Direktoratet for e-helse, Norway", "Kristian Berg, Vestvågøy kommune - Fagutviklingsavdelingen, Norway", "SB Bhattacharyya, Sudisa Consultancy Services, India", "Bjørn Christensen, Helse Bergen HF, Norway", "Stig Erik Hegrestad, Helse Førde, Norway", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Mikkel Gaup Grønmo, FSE, Helse Nord, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Cecilie Graver, Oslo universitetssykehus HF, Norway", "Ingrid Heitmann, Oslo universitetssykehus HF, Norway", "Annette Hole Sjøborg, DIPS ASA, Norway", "Hilde Hollås, DIPS ASA, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Lars Ivar Mehlum, Helse Bergen HF, Norway", "Tom Jarl Jakobsen, Helse Bergen, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Harmony Kosola, Alberta Health Services, Canada", "Anne Kristin Strand, Sykehuspartner HF, Norway", "Heather Leslie, Ocean Health Systems, Australia", "Marit Ludvigsen, St Olavs Hospital, Norway", "Hallvard Lærum, Direktoratet for e-helse, Norway", "Siv Marie Lien, DIPS ASA, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Vladimir Pizzo, Hospital Sírio Libanês, Brazil", "Navin Ramachandran, NHS, United Kingdom", "Tanja Riise, Nasjonal IKT HF, Norway", "Anoop Shah, University College London, United Kingdom", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Iztok Stotl, UKCLJ, Slovenia", "Roy Støle, OUS, Norway", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Nyree Taylor, Ocean Informatics, Australia", "Tesfay Teame, Folkehelseinstittutet, Norway", "Rowan Thomas, St. Vincent's Hospital Melbourne, Australia", "Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -144,15 +142,15 @@ A fluid balance chart will typically require a combination of multiple instances
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Fluid balance
+	OBSERVATION[at0000] matches {	-- Fluid balance
 		data matches {
-			HISTORY[at0001] matches {    -- Event Series
+			HISTORY[at0001] matches {	-- Event Series
 				events cardinality matches {1..*; unordered} matches {
-					INTERVAL_EVENT[at0002] occurrences matches {0..*} matches {    -- Any interval event
+					INTERVAL_EVENT[at0002] occurrences matches {0..*} matches {	-- Any interval event
 						data matches {
-							ITEM_TREE[at0003] matches {    -- Tree
+							ITEM_TREE[at0003] matches {	-- Tree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Total input
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Total input
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::129]>
@@ -174,7 +172,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Total output
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Total output
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::129]>
@@ -196,7 +194,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Insensible loss
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Insensible loss
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::129]>
@@ -218,7 +216,7 @@ definition
 											>
 										}
 									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {    -- Fluid balance
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Fluid balance
 										value matches {
 											C_DV_QUANTITY <
 												property = <[openehr::129]>
@@ -241,35 +239,33 @@ definition
 							}
 						}
 					}
-					INTERVAL_EVENT[at0008] occurrences matches {0..1} matches {    -- 24 hour total
+					INTERVAL_EVENT[at0008] occurrences matches {0..1} matches {	-- 24 hour total
 						math_function matches {
 							DV_CODED_TEXT matches {
-								defining_code matches {
-									[openehr::148]
-								}
+								defining_code matches {[openehr::148]}
 							}
 						}
 						width matches {
 							DV_DURATION matches {
-								value matches {PT24H}
+								value matches {|PT24H|}
 							}
 						}
 						data matches {
-							use_node ITEM_TREE /data[at0001]/events[at0002]/data[at0003]
+							use_node ITEM_TREE /data[at0001]/events[at0002]/data[at0003]	-- /data[Event Series]/events[Any interval event]/data[Tree]
 						}
 					}
 				}
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0009] matches {    -- Tree
+			ITEM_TREE[at0009] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Insensible loss formula
+					ELEMENT[at0010] occurrences matches {0..1} matches {	-- Insensible loss formula
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {    -- Extension
+					allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {	-- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -277,6 +273,7 @@ definition
 			}
 		}
 	}
+
 
 ontology
 	term_definitions = <
