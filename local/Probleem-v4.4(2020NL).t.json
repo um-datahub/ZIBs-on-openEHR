@@ -22,8 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "224806038573f165af10d0816598b2fc",
-      "PARENT:MD5-CAM-1.0.1" : "4BF04E7D09B866397CA12BAFED2BC216"
+      "MD5-CAM-1.0.1" : "4bc2765c701fcea622ec8e0392a587a8",
+      "PARENT:MD5-CAM-1.0.1" : "6780584ECAE98538AF60C1335D7ED4BF",
+      "sem_ver" : "0.1.0",
+      "build_uid" : "098e4a64-536a-4708-a6f0-96c80ce94c58"
     },
     "details" : {
       "de" : {
@@ -169,6 +171,21 @@
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "purpose" : "",
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
       }
     }
   },
@@ -228,15 +245,7 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_DATE_TIME",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_DATE_TIME",
-                    "rmTypeName" : "DATE_TIME",
-                    "constraint" : [ ]
-                  } ]
-                } ],
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -359,15 +368,7 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_DATE_TIME",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_DATE_TIME",
-                    "rmTypeName" : "DATE_TIME",
-                    "constraint" : [ ]
-                  } ]
-                } ],
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -665,6 +666,20 @@
         "ac0.2" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
+        }
+      },
+      "zh" : {
+        "ac0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.1",
+          "description" : ""
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
           "code" : "ac0.2",
           "description" : ""
         }
@@ -1791,6 +1806,20 @@
       "codeString" : "nl"
     },
     "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : {
+      "name" : "Yexuan Cheng",
+      "organisation" : "浙江大学",
+      "email" : "3160100913@zju.edu.cn"
+    },
     "otherDetails" : { }
   } ]
 }
