@@ -1,6 +1,6 @@
 {
   "templateId" : "AlcoholGebruik-v3.3(2023NL)",
-  "semVer" : "0.1.5",
+  "semVer" : "0.1.6",
   "version" : "2.3",
   "defaultLanguage" : "nl",
   "languages" : [ "nl" ],
@@ -118,7 +118,7 @@
         "localizedName" : "Hoeveelheid",
         "rmType" : "DV_QUANTITY",
         "nodeId" : "at0023",
-        "min" : 1,
+        "min" : 0,
         "max" : 1,
         "localizedNames" : {
           "nl" : "Hoeveelheid"
