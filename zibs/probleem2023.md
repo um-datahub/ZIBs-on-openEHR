@@ -7,6 +7,7 @@ zib: Probleem-v4.6.1(2023NL)
 openEHR:
     templates: 
         - Probleem-v4.6.1(2023NL)
+        - AnatomischeLocatie-v1.0.3(2023NL)
     archetypes: 
         - openEHR-EHR-EVALUATION.problem_diagnosis.v1
         - openEHR-EHR-CLUSTER.problem_qualifier.v2
