@@ -1,6 +1,6 @@
 {
   "templateId" : "Medicatieafspraak-v2.1(2023NL)",
-  "semVer" : "0.1.8",
+  "semVer" : "0.1.9",
   "version" : "2.3",
   "defaultLanguage" : "en",
   "languages" : [ "en" ],
@@ -29,7 +29,7 @@
       "rmType" : "ACTIVITY",
       "nodeId" : "at0001",
       "min" : 0,
-      "max" : -1,
+      "max" : 1,
       "localizedNames" : {
         "en" : "Order"
       },
@@ -81,7 +81,7 @@
           "id" : "productnaam",
           "name" : "ProductNaam",
           "localizedName" : "ProductNaam",
-          "rmType" : "DV_TEXT",
+          "rmType" : "DV_CODED_TEXT",
           "nodeId" : "at0132",
           "min" : 0,
           "max" : 1,
@@ -96,13 +96,17 @@
           },
           "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0132,'ProductNaam']/value",
           "inputs" : [ {
+            "suffix" : "code",
+            "type" : "TEXT"
+          }, {
+            "suffix" : "value",
             "type" : "TEXT"
           } ]
         }, {
           "id" : "farmeceutischevorm",
           "name" : "FarmeceutischeVorm",
           "localizedName" : "FarmeceutischeVorm",
-          "rmType" : "DV_TEXT",
+          "rmType" : "DV_CODED_TEXT",
           "nodeId" : "at0071",
           "min" : 0,
           "max" : 1,
@@ -117,13 +121,17 @@
           },
           "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0071,'FarmeceutischeVorm']/value",
           "inputs" : [ {
+            "suffix" : "code",
+            "type" : "TEXT"
+          }, {
+            "suffix" : "value",
             "type" : "TEXT"
           } ]
         }, {
           "id" : "batch_lotnummer",
           "name" : "Batch/lotNummer",
           "localizedName" : "Batch/lotNummer",
-          "rmType" : "ELEMENT",
+          "rmType" : "DV_TEXT",
           "nodeId" : "at0150",
           "min" : 0,
           "max" : 1,
@@ -133,57 +141,15 @@
           "localizedDescriptions" : {
             "en" : "The identifier assigned to the origin of the dose itself."
           },
-          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'Batch/lotNummer']",
-          "children" : [ {
-            "id" : "text_value",
-            "localizedName" : "Batch/lotNummer",
-            "rmType" : "DV_TEXT",
-            "nodeId" : "",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : null
-            },
-            "localizedDescriptions" : {
-              "en" : "The identifier assigned to the origin of the dose itself."
-            },
-            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'Batch/lotNummer']/value",
-            "inputs" : [ {
-              "type" : "TEXT"
-            } ]
-          }, {
-            "id" : "identifier_value",
-            "localizedName" : "Batch/lotNummer",
-            "rmType" : "DV_IDENTIFIER",
-            "nodeId" : "",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : null
-            },
-            "localizedDescriptions" : {
-              "en" : "The identifier assigned to the origin of the dose itself."
-            },
-            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'Batch/lotNummer']/value",
-            "inputs" : [ {
-              "suffix" : "id",
-              "type" : "TEXT"
-            }, {
-              "suffix" : "type",
-              "type" : "TEXT"
-            }, {
-              "suffix" : "issuer",
-              "type" : "TEXT"
-            }, {
-              "suffix" : "assigner",
-              "type" : "TEXT"
-            } ]
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'Batch/lotNummer']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
           } ]
         }, {
           "id" : "serienummer",
           "name" : "SerieNummer",
           "localizedName" : "SerieNummer",
-          "rmType" : "ELEMENT",
+          "rmType" : "DV_TEXT",
           "nodeId" : "at0150",
           "min" : 0,
           "max" : 1,
@@ -193,51 +159,9 @@
           "localizedDescriptions" : {
             "en" : "The identifier assigned to the origin of the dose itself."
           },
-          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'SerieNummer']",
-          "children" : [ {
-            "id" : "text_value",
-            "localizedName" : "SerieNummer",
-            "rmType" : "DV_TEXT",
-            "nodeId" : "",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "SerieNummer"
-            },
-            "localizedDescriptions" : {
-              "en" : "The identifier assigned to the origin of the dose itself."
-            },
-            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'SerieNummer']/value",
-            "inputs" : [ {
-              "type" : "TEXT"
-            } ]
-          }, {
-            "id" : "identifier_value",
-            "localizedName" : "SerieNummer",
-            "rmType" : "DV_IDENTIFIER",
-            "nodeId" : "",
-            "min" : 0,
-            "max" : 1,
-            "localizedNames" : {
-              "en" : "SerieNummer"
-            },
-            "localizedDescriptions" : {
-              "en" : "The identifier assigned to the origin of the dose itself."
-            },
-            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'SerieNummer']/value",
-            "inputs" : [ {
-              "suffix" : "id",
-              "type" : "TEXT"
-            }, {
-              "suffix" : "type",
-              "type" : "TEXT"
-            }, {
-              "suffix" : "issuer",
-              "type" : "TEXT"
-            }, {
-              "suffix" : "assigner",
-              "type" : "TEXT"
-            } ]
+          "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[at0150,'SerieNummer']/value",
+          "inputs" : [ {
+            "type" : "TEXT"
           } ]
         }, {
           "id" : "ingredient",
@@ -258,7 +182,7 @@
             "id" : "ingredientcode",
             "name" : "IngredientCode",
             "localizedName" : "IngredientCode",
-            "rmType" : "DV_TEXT",
+            "rmType" : "DV_CODED_TEXT",
             "nodeId" : "at0132",
             "min" : 0,
             "max" : 1,
@@ -273,6 +197,10 @@
             },
             "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.medication.v2,'ProductSpecificatie_FarmaceutischProduct-v2.2.1(2023NL)']/items[openEHR-EHR-CLUSTER.medication.v2,'Ingredient']/items[at0132,'IngredientCode']/value",
             "inputs" : [ {
+              "suffix" : "code",
+              "type" : "TEXT"
+            }, {
+              "suffix" : "value",
               "type" : "TEXT"
             } ]
           }, {
@@ -416,7 +344,7 @@
               "en" : "Other"
             }
           } ],
-          "terminology" : "MedicatieToedieningswegCodelijst"
+          "terminology" : "G-Standaard Toedieningswegen"
         } ]
       }, {
         "id" : "omschrijving",
@@ -1096,7 +1024,8 @@
             "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.dosage.v2,'Dosering']/items[at0134,'Toedieningssnelheid']/value",
             "inputs" : [ {
               "suffix" : "magnitude",
-              "type" : "DECIMAL"
+              "type" : "DECIMAL",
+              "defaultValue" : 0.0
             }, {
               "suffix" : "unit",
               "type" : "CODED_TEXT",
@@ -1136,7 +1065,8 @@
                     "min" : 0.0
                   }
                 }
-              } ]
+              } ],
+              "defaultValue" : "ml/h"
             } ]
           }, {
             "id" : "toedieningsduur",
@@ -1870,20 +1800,20 @@
           },
           "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']",
           "children" : [ {
-            "id" : "criterium",
-            "name" : "Criterium",
-            "localizedName" : "Criterium",
+            "id" : "condition_rule",
+            "name" : "Condition rule",
+            "localizedName" : "Condition rule",
             "rmType" : "CLUSTER",
             "nodeId" : "at0005",
             "min" : 0,
             "max" : -1,
             "localizedNames" : {
-              "en" : "Criterium"
+              "en" : "Condition rule"
             },
             "localizedDescriptions" : {
               "en" : "Details of the condition and associated dose amount or administration rate."
             },
-            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005,'Criterium']",
+            "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]",
             "children" : [ {
               "id" : "criterium",
               "name" : "Criterium",
@@ -1898,7 +1828,7 @@
               "localizedDescriptions" : {
                 "en" : "The value which is required for the associated dose amount or administration to be applied."
               },
-              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005,'Criterium']/items[at0002,'Criterium']/value",
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]/items[at0002,'Criterium']/value",
               "inputs" : [ {
                 "suffix" : "code",
                 "type" : "CODED_TEXT",
@@ -1987,7 +1917,7 @@
                     "en" : "Geen Informatie"
                   }
                 } ],
-                "terminology" : "ZonodigCriteriumCodelijst"
+                "terminology" : "GSt bst362"
               } ]
             }, {
               "id" : "maximaledosering",
@@ -2003,7 +1933,7 @@
               "localizedDescriptions" : {
                 "en" : "The dose amount to be administered if the condition applies."
               },
-              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005,'Criterium']/items[at0004,'MaximaleDosering']/value",
+              "aqlPath" : "/activities[at0001]/description[at0002]/items[openEHR-EHR-CLUSTER.therapeutic_direction.v1,'Doseerinstructie_GebruiksInstructie-v2.0.1(2023NL)']/items[openEHR-EHR-CLUSTER.conditional_medication_rules.v0,'Zonodig']/items[at0005]/items[at0004,'MaximaleDosering']/value",
               "inputs" : [ {
                 "suffix" : "magnitude",
                 "type" : "DECIMAL",
@@ -3156,7 +3086,7 @@
               "en" : "overig"
             }
           } ],
-          "terminology" : "AanvullendeInstructiesCodelijst"
+          "terminology" : "G-Standaard Gebruiksvoorschrift"
         } ]
       }, {
         "id" : "medicatieafspraakaanvullendeinformatie",
