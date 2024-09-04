@@ -1,6 +1,6 @@
 {
   "templateId" : "DrugsGebruik-v3.4.1(2023NL)",
-  "semVer" : "0.1.4",
+  "semVer" : "0.1.0",
   "version" : "2.3",
   "defaultLanguage" : "en",
   "languages" : [ "en" ],
@@ -9,18 +9,18 @@
     "name" : "DrugsGebruik-v3.4.1(2023NL)",
     "localizedName" : "DrugsGebruik-v3.4.1(2023NL)",
     "rmType" : "EVALUATION",
-    "nodeId" : "openEHR-EHR-EVALUATION.substance_use_summary.v0",
+    "nodeId" : "openEHR-EHR-EVALUATION.substance_use_summary.v1",
     "min" : 1,
     "max" : 1,
     "localizedNames" : {
       "en" : "DrugsGebruik-v3.4.1(2023NL)"
     },
     "localizedDescriptions" : {
-      "en" : "Summary or persistent information about typical use of a specific substance or class of substances, other than tobacco and alcohol, that may lead to harmful effects on an individual's health or social well-being."
+      "en" : "Summary or persistent information about typical use of a specific substance or class of substances that may harm an individual's health or social well-being."
     },
     "annotations" : {
       "228366006" : "Bevinding betreffende drugsgebruik",
-      "comment" : "Substances include, but are not limited to psychostimulants, barbiturates, cannabis, hallucinogens, opioids, GHB, MDMA, sniffing of hydrocarbons, bath salts, anabolic steroids as well as therapeutic substances, for example laxative, exceeding its appropriate dosage or intent."
+      "comment" : "Tobacco smoking, smokeless tobacco use, alcohol consumption, vaping and medication administration according to established medical guidelines and standards, are intentionally excluded from the scope of this archetype and recorded using other purpose-specific archetypes."
     },
     "aqlPath" : "",
     "children" : [ {
@@ -197,7 +197,7 @@
         "en" : "DrugsGebruikStatus"
       },
       "localizedDescriptions" : {
-        "en" : "Statement about current use of the substance, in all forms and by all routes."
+        "en" : "Statement about current use of the substance, by all routes."
       },
       "annotations" : {
         "228366006" : "Bevinding betreffende drugsgebruik"
@@ -270,145 +270,130 @@
       "rmType" : "CLUSTER",
       "nodeId" : "at0012",
       "min" : 0,
-      "max" : 1,
+      "max" : -1,
       "localizedNames" : {
         "en" : "Per episode"
       },
       "localizedDescriptions" : {
-        "en" : "Details about a discrete period of use of the substance."
+        "en" : "Details about a period of use of the substance identified in 'Substance name' or, if a class of substance is used in 'Substance name, to provide details about the use of a specific substance."
       },
       "aqlPath" : "/data[at0001]/items[at0012]",
       "children" : [ {
+        "id" : "hoeveelheid",
+        "name" : "Hoeveelheid",
+        "localizedName" : "Hoeveelheid",
+        "rmType" : "DV_QUANTITY",
+        "nodeId" : "at0019",
+        "min" : 0,
+        "max" : 1,
+        "localizedNames" : {
+          "en" : "Hoeveelheid"
+        },
+        "localizedDescriptions" : {
+          "en" : "The typical pattern of frequency of use of the specific substance during the episode."
+        },
+        "annotations" : {
+          "comment" : "This element is repeatable to allow multiple ways of recording the pattern of use. The typical pattern of use can be made more granular by coding with a terminology or a local value set, or using the quantity data type, in a template."
+        },
+        "aqlPath" : "/data[at0001]/items[at0012]/items[at0019,'Hoeveelheid']/value",
+        "inputs" : [ {
+          "suffix" : "magnitude",
+          "type" : "DECIMAL"
+        }, {
+          "suffix" : "unit",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "1/d",
+            "label" : "1/d",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "1/wk",
+            "label" : "1/wk",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "1/mo",
+            "label" : "1/mo",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          }, {
+            "value" : "1/a",
+            "label" : "1/a",
+            "validation" : {
+              "range" : {
+                "minOp" : ">=",
+                "min" : 0.0
+              }
+            }
+          } ]
+        } ]
+      }, {
         "id" : "toedieningsweg",
         "name" : "Toedieningsweg",
         "localizedName" : "Toedieningsweg",
-        "rmType" : "CLUSTER",
-        "nodeId" : "at0033",
-        "min" : 0,
+        "rmType" : "DV_CODED_TEXT",
+        "nodeId" : "at0036",
+        "min" : 1,
         "max" : -1,
         "localizedNames" : {
           "en" : "Toedieningsweg"
         },
         "localizedDescriptions" : {
-          "en" : "Details about the substance use per route or form of the substance during the episode."
+          "en" : "The name of the route of administration of the specified substance during the episode."
         },
-        "aqlPath" : "/data[at0001]/items[at0012]/items[at0033,'Toedieningsweg']",
-        "children" : [ {
-          "id" : "route",
-          "name" : "Route",
-          "localizedName" : "Route",
-          "rmType" : "DV_CODED_TEXT",
-          "nodeId" : "at0036",
-          "min" : 1,
-          "max" : 1,
-          "localizedNames" : {
-            "en" : "Route"
-          },
-          "localizedDescriptions" : {
-            "en" : "The route or administration of the substance. For example: 'intravenous' or 'inhalation'."
-          },
-          "annotations" : {
-            "410675002" : "228366006"
-          },
-          "aqlPath" : "/data[at0001]/items[at0012]/items[at0033,'Toedieningsweg']/items[at0036,'Route']/value",
-          "inputs" : [ {
-            "suffix" : "code",
-            "type" : "CODED_TEXT",
-            "list" : [ {
-              "value" : "9",
-              "label" : "ORAAL",
-              "localizedLabels" : {
-                "en" : "ORAAL"
-              }
-            }, {
-              "value" : "6",
-              "label" : "NASAAL",
-              "localizedLabels" : {
-                "en" : "NASAAL"
-              }
-            }, {
-              "value" : "62",
-              "label" : "INHALATIE",
-              "localizedLabels" : {
-                "en" : "INHALATIE"
-              }
-            }, {
-              "value" : "5",
-              "label" : "INTRAVENEUS",
-              "localizedLabels" : {
-                "en" : "INTRAVENEUS"
-              }
-            }, {
-              "value" : "OTH",
-              "label" : "Anders",
-              "localizedLabels" : {
-                "en" : "Anders"
-              }
-            } ],
-            "terminology" : "G-Standaard Toedieningswegen"
-          } ]
-        }, {
-          "id" : "hoeveelheid",
-          "name" : "Hoeveelheid",
-          "localizedName" : "Hoeveelheid",
-          "rmType" : "DV_QUANTITY",
-          "nodeId" : "at0044",
-          "min" : 0,
-          "max" : 1,
-          "localizedNames" : {
-            "en" : "Hoeveelheid"
-          },
-          "localizedDescriptions" : {
-            "en" : "The typical pattern or frequency of use, by the identified route or form."
-          },
-          "annotations" : {
-            "comment" : "This element is repeatable to allow multiple ways of recording the pattern or frequency of use. The typical pattern can be made more granular by coding with a terminology or a local value set, or using the quantity data type, in a template."
-          },
-          "aqlPath" : "/data[at0001]/items[at0012]/items[at0033,'Toedieningsweg']/items[at0044,'Hoeveelheid']/value",
-          "inputs" : [ {
-            "suffix" : "magnitude",
-            "type" : "DECIMAL"
+        "annotations" : {
+          "410675002" : "Toedieningsweg",
+          "comment" : "Coding with an external terminology is preferred, where possible."
+        },
+        "aqlPath" : "/data[at0001]/items[at0012]/items[at0036,'Toedieningsweg']/value",
+        "inputs" : [ {
+          "suffix" : "code",
+          "type" : "CODED_TEXT",
+          "list" : [ {
+            "value" : "9",
+            "label" : "ORAAL",
+            "localizedLabels" : {
+              "en" : "ORAAL"
+            }
           }, {
-            "suffix" : "unit",
-            "type" : "CODED_TEXT",
-            "list" : [ {
-              "value" : "1/d",
-              "label" : "1/d",
-              "validation" : {
-                "range" : {
-                  "minOp" : ">=",
-                  "min" : 0.0
-                }
-              }
-            }, {
-              "value" : "1/wk",
-              "label" : "1/wk",
-              "validation" : {
-                "range" : {
-                  "minOp" : ">=",
-                  "min" : 0.0
-                }
-              }
-            }, {
-              "value" : "1/mo",
-              "label" : "1/mo",
-              "validation" : {
-                "range" : {
-                  "minOp" : ">=",
-                  "min" : 0.0
-                }
-              }
-            }, {
-              "value" : "1/a",
-              "label" : "1/a",
-              "validation" : {
-                "range" : {
-                  "minOp" : ">=",
-                  "min" : 0.0
-                }
-              }
-            } ]
-          } ]
+            "value" : "6",
+            "label" : "NASAAL",
+            "localizedLabels" : {
+              "en" : "NASAAL"
+            }
+          }, {
+            "value" : "62",
+            "label" : "INHALATIE",
+            "localizedLabels" : {
+              "en" : "INHALATIE"
+            }
+          }, {
+            "value" : "5",
+            "label" : "INTRAVENEUS",
+            "localizedLabels" : {
+              "en" : "INTRAVENEUS"
+            }
+          }, {
+            "value" : "OTH",
+            "label" : "Anders",
+            "localizedLabels" : {
+              "en" : "Anders"
+            }
+          } ],
+          "terminology" : "G-Standaard Toedieningswegen"
         } ]
       } ]
     }, {

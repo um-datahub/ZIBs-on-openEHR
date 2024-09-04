@@ -8,7 +8,7 @@ openEHR:
   templates:
     - DrugsGebruik-v3.4.1(2023NL)
   archetypes:
-    - openEHR-EHR-EVALUATION.substance_use_summary.v0
+    - openEHR-EHR-EVALUATION.substance_use_summary.v1
 status:
   mapping:
   template:
