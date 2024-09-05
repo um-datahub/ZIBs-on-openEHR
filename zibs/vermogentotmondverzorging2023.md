@@ -9,6 +9,7 @@ openEHR:
     - VermogenTotMondverzorging-v3.1(2023NL)
   archetypes:
     - openEHR-EHR-OBSERVATION.adl.v0
+    - openEHR-EHR-CLUSTER.device.v1
 status:
   mapping:
   template:
