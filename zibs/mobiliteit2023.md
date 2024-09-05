@@ -7,6 +7,7 @@ zib: Mobiliteit-v3.3.1(2023NL)
 openEHR:
   templates:
     - Mobiliteit-v3.3.1(2023NL)
+    - MedischHulpmiddel-v4.0(2023NL)
   archetypes:
     - openEHR-EHR-OBSERVATION.problem_screening.v1
 status:
