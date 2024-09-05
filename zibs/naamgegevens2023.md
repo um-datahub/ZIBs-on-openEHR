@@ -6,6 +6,7 @@ version: 0.1
 zib: Naamgegevens-v1.1.1(2023NL)
 openEHR:
   templates:
+    - Naamgegevens-v1.1.1(2023NL)
   archetypes:
     - openEHR-EHR-CLUSTER.structured_name.v1
 status:
